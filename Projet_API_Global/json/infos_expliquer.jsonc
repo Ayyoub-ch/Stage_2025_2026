@@ -1,0 +1,110 @@
+// explications insérées comme commentaires (JSONC)
+{
+  // Identifiant du jeu de données (ICP = Indice des prix à la consommation harmonisé).
+  "dataset_id": "ICP",
+
+  // Clé unique identifiant la série de données (métadonnée de localisation/variable).
+  
+  //Explication de la série_key :
+
+  //ICP: Indice des prix à la consommation harmonisé (Inflation)
+  //M: Mensuel
+  //FR : France
+  //N: Brut
+  //000000: Code pour l'indice général IPCH
+  //4: Eurostat
+  //ANR: Taux de variation annuel
+  "series_key": "ICP.M.FR.N.000000.4.ANR",
+
+  // Titre en français décrivant la série (ici : taux d'inflation pour la France).
+  "title_fr": "France, Taux d'inflation",
+
+  // Titre en anglais de la série (HICP = Harmonised Index of Consumer Prices).
+  "title_en": "HICP - Overall index",
+
+  // Période temporelle de l'observation (année-mois : novembre 2025).
+  "time_period": "2025-11",
+
+  // Date de début de la période couverte (1er novembre 2025).
+  "time_period_start": "2025-11-01",
+
+  // Date de fin de la période couverte (30 novembre 2025).
+  "time_period_end": "2025-11-30",
+
+  // Valeur observée pour la période (ici 0.8, typiquement % ou indice selon le contexte).
+  "obs_value": 0.8,
+
+  // Statut de l'observation (code: par ex. E = estimé/préliminaire/expliciter selon la convention).
+  "obs_status": "E",
+
+  // Date et heure de la mise à jour de cette entrée d'observation.
+  "updated_at": "2025-12-19T15:19:02+00:00",
+
+  // Début d'un objet imbriqué contenant attributs supplémentaires de l'observation.
+  "observations_attributes_and_values": {
+    // Attribut supplémentaire : niveau de confiance ou flag (ici valeur "F" signifiant une catégorie précise selon le schéma interne).
+    "OBS_CONF": "F",
+    // Répétition/normalisation du statut d'observation (ici aussi "E").
+    "OBS_STATUS": "E"
+  },
+
+  // Timestamp de suppression si supprimé ; `null` signifie pas supprimé.
+  "deleted_at": null,
+
+  // Début d'un tableau listant des identifiants de paniers ou groupes associés.
+  "baskets": [
+    // Un ID de panier associé à cette observation.
+    "5384861"
+  ],
+
+  // Champ commentaire pour l'observation ; `null` = pas de commentaire.
+  "comment_obs": null,
+
+  // Statut de confirmation ; `null` si non renseigné.
+  "conf_status": null,
+
+  // Date d'embargo éventuelle ; `null` si pas d'embargo.
+  "embargo_date": null,
+
+  // Autre champ de commentaire/complément ; `null` si vide.
+  "obs_com": null,
+
+  // Champ de configuration/confirmation de l'observation (ici "F").
+  "obs_conf": "F",
+
+  // Champ technique (probablement interne) ; `null` si non utilisé.
+  "obs_edp_wbb": null,
+
+  // Indicateur de période avant rupture (break) ; `null` si pas applicable.
+  "obs_pre_break": null,
+
+  // Valeur avant rupture si applicable ; `null` ici.
+  "pre_break_value": null,
+
+  // Horodatage de la plus récente mise à jour liée (peut couvrir modifications liées à la série).
+  "greatest_updated_at": "2025-12-19T15:19:15+00:00",
+
+  // Horodatage de la dernière mise à jour de la série de données entière.
+  "series_updated_at": "2025-12-19T15:19:15+00:00",
+
+  // Horodatage de la dernière mise à jour des thèmes/catégories liés.
+  "last_themes_updated_at": "2025-10-22 12:00:06.930453",
+
+  // Horodatage de la dernière mise à jour du groupe associé ; `null` si aucun.
+  "last_group_updated_at": null,
+
+  // Début d'un tableau décrivant le chemin hiérarchique en français.
+  "path_fr": [
+    "Eurosystème/Indices des prix à la consommation harmonisés(IPCH)/Indice général",
+    "Inflation/Indice des prix de la France"
+  ],
+
+  // Début d'un tableau décrivant le chemin hiérarchique en anglais.
+  "path_en": [
+    "Euro area/HICP/Overall index",
+    "Inflation/Price index"
+  ],
+
+  // Champ d'action ODS (OpenDocument/flux de publication) ; `null` si aucune action en attente.
+  "ods_action": null
+}

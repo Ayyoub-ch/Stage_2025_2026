@@ -1,0 +1,38 @@
+{
+    "dataset_id": "ICP",
+    "series_key": "ICP.M.FR.N.000000.4.ANR",
+    "title_fr": "France, Taux d'inflation",
+    "title_en": "HICP - Overall index",
+    "time_period": "2025-11",
+    "time_period_start": "2025-11-01",
+    "time_period_end": "2025-11-30",
+    "obs_value": 0.8,
+    "obs_status": "E",
+    "updated_at": "2025-12-19T15:19:02+00:00",
+    "observations_attributes_and_values": {
+      "OBS_CONF": "F",
+      "OBS_STATUS": "E"
+    },
+    "deleted_at": null,
+    "baskets": [
+      "5384861"
+    ],
+    "obs_com": null,
+    "obs_conf": "F",
+    "obs_edp_wbb": null,
+    "obs_pre_break": null,
+    "pre_break_value": null,
+    "greatest_updated_at": "2025-12-19T15:19:15+00:00",
+    "series_updated_at": "2025-12-19T15:19:15+00:00",
+    "last_themes_updated_at": "2025-10-22 12:00:06.930453",
+    "last_group_updated_at": null,
+    "path_fr": [
+      "Eurosystème/Indices des prix à la consommation harmonisés(IPCH)/Indice général",
+      "Inflation/Indice des prix de la France"
+    ],
+    "path_en": [
+      "Euro area/HICP/Overall index",
+      "Inflation/Price index"
+    ],
+    "ods_action": null
+  }
