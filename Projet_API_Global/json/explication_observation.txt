@@ -1,0 +1,52 @@
+explication_observation - explication ligne par ligne du fichier test.json
+
+1: {  
+2:     "dataset_id": "ICP",  -> Identifiant du jeu de données (ICP = Indice des prix à la consommation harmonisé).
+3:     "series_key": "ICP.M.FR.N.000000.4.ANR",  -> Clé unique identifiant la série de données (métadonnée de localisation/variable).
+4:     "title_fr": "France, Taux d'inflation",  -> Titre en français décrivant la série (ici : taux d'inflation pour la France).
+5:     "title_en": "HICP - Overall index",  -> Titre en anglais de la série (HICP = Harmonised Index of Consumer Prices).
+6:     "time_period": "2025-11",  -> Période temporelle de l'observation (année-mois : novembre 2025).
+7:     "time_period_start": "2025-11-01",  -> Date de début de la période couverte (1er novembre 2025).
+8:     "time_period_end": "2025-11-30",  -> Date de fin de la période couverte (30 novembre 2025).
+9:     "obs_value": 0.8,  -> Valeur observée pour la période (ici 0.8, typiquement % ou indice selon le contexte).
+10:     "obs_status": "E",  -> Statut de l'observation (code: par ex. E = estimé/préliminaire/expliciter selon la convention).
+11:     "updated_at": "2025-12-19T15:19:02+00:00",  -> Date et heure de la mise à jour de cette entrée d'observation.
+12:     "observations_attributes_and_values": {  -> Début d'un objet imbriqué contenant attributs supplémentaires de l'observation.
+13:       "OBS_CONF": "F",  -> Attribut supplémentaire : niveau de confiance ou flag (ici valeur "F" signifiant une catégorie précise selon le schéma interne).
+14:       "OBS_STATUS": "E"  -> Répétition/normalisation du statut d'observation (ici aussi "E").
+15:     },  -> Fin de l'objet imbriqué `observations_attributes_and_values`.
+
+16:     "deleted_at": null,  -> Timestamp de suppression si supprimé ; `null` signifie pas supprimé.
+17:     "baskets": [  -> Début d'un tableau listant des identifiants de paniers ou groupes associés.
+18:       "5384861"  -> Un ID de panier associé à cette observation.
+19:     ],  -> Fin du tableau `baskets`.
+
+20:     "comment_obs": null,  -> Champ commentaire pour l'observation ; `null` = pas de commentaire.
+21:     "conf_status": null,  -> Statut de confirmation ; `null` si non renseigné.
+22:     "embargo_date": null,  -> Date d'embargo éventuelle ; `null` si pas d'embargo.
+23:     "obs_com": null,  -> Autre champ de commentaire/complément ; `null` si vide.
+24:     "obs_conf": "F",  -> Champ de configuration/confirmation de l'observation (ici "F").
+25:     "obs_edp_wbb": null,  -> Champ technique (probablement interne) ; `null` si non utilisé.
+26:     "obs_pre_break": null,  -> Indicateur de période avant rupture (break) ; `null` si pas applicable.
+27:     "pre_break_value": null,  -> Valeur avant rupture si applicable ; `null` ici.
+28:     "greatest_updated_at": "2025-12-19T15:19:15+00:00",  -> Horodatage de la plus récente mise à jour liée (peut couvrir modifications liées à la série).
+29:     "series_updated_at": "2025-12-19T15:19:15+00:00",  -> Horodatage de la dernière mise à jour de la série de données entière.
+30:     "last_themes_updated_at": "2025-10-22 12:00:06.930453",  -> Horodatage de la dernière mise à jour des thèmes/catégories liés.
+31:     "last_group_updated_at": null,  -> Horodatage de la dernière mise à jour du groupe associé ; `null` si aucun.
+32:     "path_fr": [  -> Début d'un tableau décrivant le chemin hiérarchique en français.
+33:       "Eurosystème/Indices des prix à la consommation harmonisés(IPCH)/Indice général",
+34:       "Inflation/Indice des prix de la France"
+35:     ],  -> Fin du tableau `path_fr`.
+
+36:     "path_en": [  -> Début d'un tableau décrivant le chemin hiérarchique en anglais.
+37:       "Euro area/HICP/Overall index",
+38:       "Inflation/Price index"
+39:     ],  -> Fin du tableau `path_en`.
+
+40:     "ods_action": null  -> Champ d'action ODS (OpenDocument/flux de publication) ; `null` si aucune action en attente.
+41:   }  -> Fin de l'objet JSON racine.
+
+Remarques générales :
+- Les champs `null` indiquent l'absence d'information pour ces attributs.
+- Les codes comme "E" ou "F" correspondent à des conventions internes (statuts, niveaux de confiance) ; pour une interprétation exacte, se référer au dictionnaire de métadonnées de la source.
+- Les timestamps sont en format ISO 8601 et indiquent date/heures de mise à jour.
