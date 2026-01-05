@@ -1,0 +1,10 @@
+Pour l'inflation : https://webstat.banque-france.fr/fr/catalogue/icp/?publication_status=up_to_date,upcoming,discontinued&sort=-greatest_updated_at,title_fr&ICP,freq=M&ICP,ref_area=FR&ICP,icp_item=000000&ICP,sts_institution=4,3&ICP,icp_suffix=INX
+Site: Huwise
+Login: stagiairerh@logical-conseils.com
+mdp: Stagiairelogical*2
+
+But: 
+-avoir le fichier json
+-le comprendre
+-filtrer en fonction de ce qu'on a besoin
+-"essayer" de l'adapter ou de le mettre sur gcp afin de le mettre dans les jobs et services
