@@ -1,0 +1,25 @@
+Objectif : trouver une API pouvant stocker les matières premières (commodities) (fait)
+
+
+Objectifs de cette aprem:
+-créer un script python pouvant récolter les données  de "https://www.insee.fr/fr/statistiques/serie/" ( de l'api)
+pour ça il faudra la connecter au site et utiliser la librairie request
+
+
+-gérer les exceptions
+
+
+
+aides:
+
+Curl
+
+curl -X 'GET' \
+  'https://api.insee.fr/series/BDM/data/SERIES_BDM/010002086?startPeriod=1990&endPeriod=2025&includeHistory=true&updatedAfter=2025-11-29' \
+  -H 'accept: application/vnd.sdmx.structurespecificdata+xml;version=2.1'
+Request URL
+https://api.insee.fr/series/BDM/data/SERIES_BDM/010002086?startPeriod=1990&endPeriod=2025&includeHistory=true&updatedAfter=2025-11-29
+
+
+
+
