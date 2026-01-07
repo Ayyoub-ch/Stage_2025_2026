@@ -1,0 +1,212 @@
+Tâches: (faites à 15h00)
+
+trouver la documentation
+trouver la formule de calcul de l'inflation utilisée par webstat
+comprendre les données
+
+
+
+
+DOCUMENTATION
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "dataset_id": {
+        "type": "string",
+        "description": "Identifiant du jeu de données"
+      },
+      "series_key": {
+        "type": "string",
+        "description": "Clé unique identifiant la série"
+      },
+      "title_fr": {
+        "type": ["string", "null"],
+        "description": "Titre (court) de la série en français"
+      },
+      "title_en": {
+        "type": ["string", "null"],
+        "description": "Titre (court) de la série en anglais"
+      },
+      "time_period": {
+        "type": "string",
+        "description": "Période temporelle de l'observation (format SDMX : Ex: 2024-12-25 pour une série quotidienne, 2024-W52 pour une série hebdomadaire, 2024-12 pour une série mensuelle, 2024-Q4 pour une série trimestrielle, 2024-S2 pour une série semestrielle, 2024 pour une série annuelle)"
+      },
+      "time_period_start": {
+        "type": "string",
+        "format": "date",
+        "description": "Date de début de la période temporelle (format ISO 8601: YYYY-MM-DD)"
+      },
+      "time_period_end": {
+        "type": "string",
+        "format": "date",
+        "description": "Date de fin de la période temporelle (format ISO 8601: YYYY-MM-DD)"
+      },
+      "obs_value": {
+        "type": ["number", "null"],
+        "description": "Valeur de l'observation (peut être null)"
+      },
+      "obs_status": {
+        "type": ["string", "null"],
+        "description": "Statut de l'observation (peut être null). Cf. codeliste CL_OBS_STATUS (Ex : A == Valeur normale, F == Valeur prévisionnelle, M == Valeur manquante, U == Non fiable, etc..)"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date et heure de publication de l'observation"
+      },
+      "observations_attributes_and_values": {
+        "type": "string",
+        "description": "Ensemble des valeurs des attributs de l'observation encodés en JSON (ce champ permet de comprendre quels sont les attributs qui relèvent du modèle de la série)"
+      },
+      "baskets": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        },
+        "description": "Liste des identifiants des séléctions préétablies auxquelles la série appartient (peut être null)"
+      },
+      "comment_obs": {
+        "type": ["string", "null"],
+        "description": "Commentaire sur l'observation (si applicable)"
+      },
+      "conf_status": {
+        "type": ["string", "null"],
+        "description": "Statut de la confidentialité de l'observation. Cf. codeliste CL_OBS_CONF."
+      },
+      "embargo_date": {
+        "type": ["string", "null"],
+        "format": "string",
+        "description": "Date d'embargo (si applicable)"
+      },
+      "obs_com": {
+        "type": ["string", "null"],
+        "description": "Commentaire de l'observation (si applicable)"
+      },
+      "obs_conf": {
+        "type": ["string", "null"],
+        "description": "Statut de la confidentialité de l'observation. Cf. codeliste CL_OBS_CONF."
+      },
+      "obs_edp_wbb": {
+        "type": ["string", "null"],
+        "description": "Indicateur supplémentaire (spécifique au modèle de la Balance des Paiements)"
+      },
+      "obs_pre_break": {
+        "type": ["string", "null"],
+        "description": "Indicateur avant une rupture (si applicable)"
+      },
+      "pre_break_value": {
+        "type": ["number", "null"],
+        "description": "Valeur avant une rupture (si applicable)"
+      }
+    },
+    "required": [
+      "dataset_id",
+      "series_key",
+      "time_period",
+      "time_period_start",
+      "time_period_end",
+      "updated_at"
+    ]
+  }
+}
+
+
+FORMULE DE CALCUL DE L'INFLATION
+1. On choisit un « panier » de consommation
+L’Insee définit un panier de biens et services représentatifs de la consommation des ménages :
+alimentation, logement, carburants, transports, vêtements, téléphonie, loisirs, etc.
+Ce panier est mis à jour chaque année pour refléter les habitudes réelles de consommation.
+
+2. On relève les prix
+Chaque mois, l’Insee relève les prix des mêmes produits dans le temps.
+Les prix sont observés dans les magasins, sur Internet et à partir des données de caisse.
+Cela permet de comparer un même produit d’un mois à l’autre.
+
+3. On corrige les changements de qualité
+Si un produit disparaît ou est remplacé (nouveau modèle, nouvelle version),
+l’Insee ajuste le prix pour neutraliser la différence de qualité.
+L’objectif est de mesurer l’évolution des prix à qualité constante.
+
+4. On pondère chaque produit
+Chaque produit a un poids différent selon son importance dans la consommation des ménages.
+Les dépenses fréquentes (alimentation, carburants) et les dépenses rares mais coûteuses
+(voiture, électroménager) sont toutes prises en compte.
+Les pondérations sont mises à jour chaque année.
+
+5. On calcule l’indice des prix à la consommation (IPC)
+Une année de référence est choisie (indice = 100).
+On calcule ensuite l’IPC chaque mois en comparant les prix à cette année de base.
+
+6. On calcule le taux d’inflation
+Le taux d’inflation correspond à la variation de l’IPC entre deux périodes.
+Il s’exprime en pourcentage et mesure l’évolution moyenne des prix.
+
+Inflation=((IPC année N - IPC année N−1 )/IPC anneée N-1)​×100
+
+
+
+
+
+COMPREHENSION DES DONNEES ET SAUVEGARDE DES DONNEES PERTINENTES
+
+
+données utiles:
+
+DONNEES		RENOMMAGE
+series_key -->	numéro de série (clé de série)
+title_fr -->	titre
+title_en -->	titre(english)
+time_period -->	période
+time_period_start -->	début
+time_period_end -->	fin
+obs_value -->		valeur inflation
+obs_statue -->		fiabilité
+updated_at -->		Date et heure de publication
+greatest_updated_at -->	dernière mise à jour
+
+
+
+
+
+suites des taches:
+trouver l'icp (formule) et les infos pour année 2024-N
+
+
+ICP= (Coût du panier à la date t​ / Coût du panier à la date de base ) × 100
+
+Exemple simple de calcul de l’ICP
+
+On utilise un panier de consommation composé de 10 pains et 5 laits (quantités fixes).
+
+Coût du panier à l’année de base
+
+Pain : 10 × 1 € = 10 €
+
+Lait : 5 × 1 € = 5 €
+
+Coût total = 15 €
+ICP de base = 100
+
+Coût du panier à l’année t
+
+Pain : 10 × 1,20 € = 12 €
+
+Lait : 5 × 1,10 € = 5,50 €
+
+👉 Coût total = 17,50 €
+
+Calcul de l’ICP
+ICP=(17,50/15)×100=116,7
+
+Interprétation
+
+ICP = 116,7
+
+Les prix ont augmenté de 16,7 %
+
+Il y a donc inflation
+
+Si l’ICP est supérieur à 100, les prix augmentent ; s’il est inférieur à 100, les prix baissent.
