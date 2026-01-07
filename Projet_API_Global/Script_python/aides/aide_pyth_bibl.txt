@@ -1,0 +1,160 @@
+1) BeautifulSoup : comprendre et extraire du HTML
+À quoi ça sert
+
+BeautifulSoup est une bibliothèque Python utilisée pour analyser et extraire des informations à partir de documents HTML ou XML.
+
+Elle est utilisée quand :
+
+les données ne sont pas accessibles via une API
+
+l’information est présente sur une page web
+
+tu dois lire le contenu d’une page, pas interagir avec un service
+
+👉 Contrairement à une API, BeautifulSoup ne communique pas avec un serveur : elle analyse un texte déjà récupéré.
+
+Le rôle exact de BeautifulSoup
+
+BeautifulSoup :
+
+prend un texte HTML brut
+
+le transforme en arbre de balises
+
+te permet de naviguer dans cet arbre
+
+facilite la recherche par balise, attribut, classe, id
+
+Mentalement :
+
+HTML → structure → objets Python navigables
+
+Ce que BeautifulSoup ne fait PAS
+
+Très important :
+
+❌ elle ne télécharge pas les pages (c’est requests qui le fait)
+
+❌ elle n’exécute pas le JavaScript
+
+❌ elle ne contourne pas les protections anti-scraping
+
+Elle est donc souvent utilisée avec :
+
+requests → récupérer la page
+
+BeautifulSoup → lire la page
+
+Comment on l’utilise conceptuellement
+
+Le flux logique est toujours :
+
+récupérer le HTML d’une page
+
+donner ce HTML à BeautifulSoup
+
+construire un objet “soupe”
+
+chercher des éléments précis
+
+extraire le texte ou les attributs
+
+Cas d’usage typiques
+
+extraire des tableaux HTML
+
+récupérer des titres, prix, dates
+
+analyser la structure d’un site
+
+scraper des pages statiques
+
+2) pandas : manipuler et analyser des données
+À quoi ça sert
+
+pandas est une bibliothèque Python dédiée à la manipulation de données structurées.
+
+Elle est utilisée quand :
+
+tu travailles avec des tableaux de données
+
+tu veux nettoyer, filtrer, agréger
+
+tu veux analyser ou préparer des données
+
+👉 pandas ne sert PAS à récupérer les données, mais à les exploiter.
+
+L’objet central : le DataFrame
+
+pandas repose sur deux structures :
+
+Series → colonne unique
+
+DataFrame → tableau (lignes × colonnes)
+
+Un DataFrame, mentalement, c’est :
+
+un tableau Excel intelligent dans Python
+
+Ce que pandas fait très bien
+
+lire des données (CSV, Excel, JSON, SQL, API)
+
+nettoyer les données (valeurs manquantes, types)
+
+filtrer et trier
+
+faire des calculs statistiques
+
+regrouper et agréger
+
+préparer des données pour la visualisation ou le ML
+
+Ce que pandas ne fait PAS
+
+❌ pas de web scraping
+
+❌ pas de graphes avancés (il délègue)
+
+❌ pas de base de données complète
+
+Comment on l’utilise conceptuellement
+
+Le flux logique pandas est :
+
+charger des données dans un DataFrame
+
+inspecter la structure
+
+nettoyer / transformer
+
+analyser / agréger
+
+exporter ou visualiser
+
+3) BeautifulSoup vs pandas : différence fondamentale
+Aspect	BeautifulSoup	pandas
+Domaine	Web scraping	Data analysis
+Type de données	HTML / XML	Données tabulaires
+Objectif	Extraire	Analyser
+Structure	Arbre de balises	Tableaux
+Complémentarité	🔹 collecte	🔹 exploitation
+4) Comment elles travaillent ensemble
+
+Très courant en pratique :
+
+requests récupère le HTML
+
+BeautifulSoup extrait des données brutes
+
+pandas transforme ces données en DataFrame
+
+pandas nettoie, analyse, exporte
+
+C’est une chaîne de traitement, pas des outils concurrents.
+
+5) Résumé en une phrase chacun
+
+BeautifulSoup : je lis une page web comme une structure logique
+
+pandas : je travaille sur des données comme dans un tableur puissant

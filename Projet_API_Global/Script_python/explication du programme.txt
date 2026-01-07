@@ -1,0 +1,218 @@
+EXPLICATION COMPLÈTE DU SCRIPT DE RÉCUPÉRATION DES DONNÉES INSEE
+
+------------------------------------------------------------
+1) OBJECTIF GÉNÉRAL DU SCRIPT
+------------------------------------------------------------
+
+Ce script Python permet de :
+- interroger l’API de l’INSEE
+- récupérer des séries temporelles sur des matières premières
+- extraire les métadonnées de chaque série
+- extraire les observations mensuelles
+- sauvegarder le tout dans des fichiers JSON
+- créer un fichier par matériau dans un dossier dédié
+
+Chaque fichier JSON contient :
+- une partie "metadata" : informations générales de la série
+- une partie "data" : valeurs chronologiques
+
+------------------------------------------------------------
+2) IMPORTS DES BIBLIOTHÈQUES
+------------------------------------------------------------
+
+BeautifulSoup :
+- Sert à parser du XML
+- Transforme le XML de l’API INSEE en une structure navigable
+- Permet de récupérer les balises <Series> et <Obs>
+
+pandas :
+- Bibliothèque d’analyse de données
+- Non utilisée directement ici
+- Prévue pour l’exploitation future des données (DataFrame)
+
+requests :
+- Sert à envoyer des requêtes HTTP
+- Permet de contacter l’API INSEE
+- Gère les réponses et les erreurs réseau
+
+os :
+- Sert à interagir avec le système de fichiers
+- Permet de créer des dossiers
+- Permet de construire des chemins de fichiers propres
+
+json :
+- Sert à écrire des données Python en format JSON
+- Garantit des fichiers lisibles et exploitables
+
+------------------------------------------------------------
+3) CRÉATION DU DOSSIER DE SORTIE
+------------------------------------------------------------
+
+Le script définit un dossier nommé "donnees_insee".
+
+S’il n’existe pas :
+- il est créé automatiquement
+
+S’il existe déjà :
+- aucune erreur n’est levée
+
+Cela permet d’exécuter le script plusieurs fois sans problème.
+
+------------------------------------------------------------
+4) DÉFINITION DES MATÉRIAUX
+------------------------------------------------------------
+
+Un dictionnaire associe :
+- le nom logique du matériau (argent, or, etc.)
+- l’URL de l’API INSEE correspondante
+
+Avantages :
+- le nom du matériau sert pour le nom du fichier
+- le code est lisible et extensible
+- ajouter un matériau = ajouter une ligne
+
+------------------------------------------------------------
+5) BOUCLE PRINCIPALE
+------------------------------------------------------------
+
+Le script parcourt chaque matériau :
+
+Pour chaque itération :
+- le nom du matériau est stocké dans une variable
+- l’URL associée est utilisée pour la requête API
+
+Tout est encapsulé dans un bloc try/except pour gérer les erreurs.
+
+------------------------------------------------------------
+6) ENVOI DE LA REQUÊTE HTTP
+------------------------------------------------------------
+
+Une requête GET est envoyée à l’API INSEE.
+
+Un timeout de 10 secondes est défini :
+- évite que le script bloque indéfiniment
+
+La méthode raise_for_status :
+- déclenche une erreur si le code HTTP est incorrect
+- protège contre les réponses invalides
+
+------------------------------------------------------------
+7) PARSING DU XML
+------------------------------------------------------------
+
+Le contenu XML renvoyé par l’API est :
+- transmis à BeautifulSoup
+- analysé avec le parser XML
+
+La balise <Series> est recherchée :
+- elle contient les métadonnées
+- elle contient toutes les observations
+
+Si la balise est absente :
+- le script affiche une erreur
+- passe au matériau suivant
+
+------------------------------------------------------------
+8) EXTRACTION DES MÉTADONNÉES
+------------------------------------------------------------
+
+Les métadonnées sont lues directement depuis les attributs XML
+de la balise <Series>.
+
+Exemples :
+- IDBANK
+- FREQ
+- TITLE_FR
+- TITLE_EN
+- LAST_UPDATE
+- UNIT_MEASURE
+- UNIT_MULT
+- REF_AREA
+- DECIMALS
+
+Ces informations sont stockées dans un dictionnaire Python
+appelé "metadata".
+
+------------------------------------------------------------
+9) EXTRACTION DES DONNÉES TEMPORELLES
+------------------------------------------------------------
+
+Chaque balise <Obs> représente une observation.
+
+Pour chaque observation :
+- la période est extraite (TIME_PERIOD)
+- la valeur est convertie en nombre
+- le statut est récupéré
+- la qualité de la donnée est stockée
+
+Chaque observation devient un dictionnaire Python.
+
+L’ensemble est stocké dans une liste appelée "donnees".
+
+------------------------------------------------------------
+10) STRUCTURE FINALE DU JSON
+------------------------------------------------------------
+
+Les données sont organisées ainsi :
+
+- "metadata" : informations générales de la série
+- "data" : liste des observations
+
+Cette structure est :
+- claire
+- standard
+- facilement exploitable par pandas ou d’autres outils
+
+------------------------------------------------------------
+11) SAUVEGARDE DU FICHIER
+------------------------------------------------------------
+
+Le nom du fichier est construit à partir :
+- du dossier de sortie
+- du nom du matériau
+
+Exemples :
+- donnees_insee/argent.json
+- donnees_insee/or.json
+
+Le fichier JSON est :
+- encodé en UTF-8
+- indenté pour être lisible
+- sans suppression des caractères accentués
+
+------------------------------------------------------------
+12) GESTION DES ERREURS
+------------------------------------------------------------
+
+Deux niveaux de gestion des erreurs :
+
+Erreurs réseau :
+- problème de connexion
+- timeout
+- API indisponible
+
+Erreurs générales :
+- problème de parsing
+- donnée manquante
+- bug inattendu
+
+Le script continue toujours avec le matériau suivant.
+
+------------------------------------------------------------
+13) RÉSUMÉ CONCEPTUEL
+------------------------------------------------------------
+
+Flux logique du script :
+
+API INSEE
+→ requête HTTP
+→ XML
+→ BeautifulSoup
+→ dictionnaires Python
+→ JSON structuré
+
+Le script est :
+- robuste
+- automatisable
+- propre
+- prêt pour l’analyse de données

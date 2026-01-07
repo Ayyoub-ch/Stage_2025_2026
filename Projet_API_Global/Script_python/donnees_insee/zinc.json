@@ -1,0 +1,2601 @@
+{
+  "metadata": {
+    "IDBANK": "010002098",
+    "FREQ": "M",
+    "TITLE_FR": "Zinc - Haut grade - Au comptant - LME - Indice en euros - Base 2010",
+    "TITLE_EN": "Zinc - High grade - Spot - LME - Index in euros - Base 2010",
+    "LAST_UPDATE": "2025-12-19",
+    "UNIT_MEASURE": "SO",
+    "UNIT_MULT": "0",
+    "REF_AREA": "ETR",
+    "DECIMALS": "1"
+  },
+  "data": [
+    {
+      "Periode": "2025-11",
+      "Valeur": 169.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-10",
+      "Valeur": 166.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-09",
+      "Valeur": 153.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-08",
+      "Valeur": 147.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-07",
+      "Valeur": 145.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-06",
+      "Valeur": 141.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-05",
+      "Valeur": 144.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-04",
+      "Valeur": 143.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-03",
+      "Valeur": 164.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-02",
+      "Valeur": 165.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2025-01",
+      "Valeur": 167.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-12",
+      "Valeur": 178.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-11",
+      "Valeur": 173.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-10",
+      "Valeur": 174.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-09",
+      "Valeur": 157.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-08",
+      "Valeur": 151.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-07",
+      "Valeur": 157.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-06",
+      "Valeur": 160.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-05",
+      "Valeur": 168.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-04",
+      "Valeur": 156.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-03",
+      "Valeur": 139.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-02",
+      "Valeur": 134.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2024-01",
+      "Valeur": 142.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-12",
+      "Valeur": 140.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-11",
+      "Valeur": 144.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-10",
+      "Valeur": 142.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-09",
+      "Valeur": 143.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-08",
+      "Valeur": 135.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-07",
+      "Valeur": 133.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-06",
+      "Valeur": 134.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-05",
+      "Valeur": 140.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-04",
+      "Valeur": 155.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-03",
+      "Valeur": 169.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-02",
+      "Valeur": 180.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2023-01",
+      "Valeur": 187.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-12",
+      "Valeur": 181.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-11",
+      "Valeur": 176.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-10",
+      "Valeur": 185.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-09",
+      "Valeur": 194.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-08",
+      "Valeur": 216.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-07",
+      "Valeur": 186.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-06",
+      "Valeur": 212.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-05",
+      "Valeur": 218.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-04",
+      "Valeur": 248.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-03",
+      "Valeur": 221.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-02",
+      "Valeur": 197.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2022-01",
+      "Valeur": 196.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-12",
+      "Valeur": 185.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-11",
+      "Valeur": 178.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-10",
+      "Valeur": 178.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-09",
+      "Valeur": 158.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-08",
+      "Valeur": 156.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-07",
+      "Valeur": 153.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-06",
+      "Valeur": 150.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-05",
+      "Valeur": 150.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-04",
+      "Valeur": 145.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-03",
+      "Valeur": 144.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-02",
+      "Valeur": 139.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2021-01",
+      "Valeur": 136.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-12",
+      "Valeur": 140.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-11",
+      "Valeur": 138.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-10",
+      "Valeur": 127.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-09",
+      "Valeur": 127.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-08",
+      "Valeur": 125.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-07",
+      "Valeur": 115.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-06",
+      "Valeur": 110.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-05",
+      "Valeur": 110.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-04",
+      "Valeur": 107.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-03",
+      "Valeur": 105.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-02",
+      "Valeur": 119.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2020-01",
+      "Valeur": 130.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-12",
+      "Valeur": 125.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-11",
+      "Valeur": 135.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-10",
+      "Valeur": 135.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-09",
+      "Valeur": 129.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-08",
+      "Valeur": 125.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-07",
+      "Valeur": 133.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-06",
+      "Valeur": 141.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-05",
+      "Valeur": 150.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-04",
+      "Valeur": 160.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-03",
+      "Valeur": 155.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-02",
+      "Valeur": 146.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2019-01",
+      "Valeur": 137.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-12",
+      "Valeur": 141.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-11",
+      "Valeur": 140.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-10",
+      "Valeur": 142.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-09",
+      "Valeur": 128.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-08",
+      "Valeur": 133.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-07",
+      "Valeur": 139.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-06",
+      "Valeur": 162.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-05",
+      "Valeur": 158.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-04",
+      "Valeur": 159.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-03",
+      "Valeur": 163.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-02",
+      "Valeur": 176.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2018-01",
+      "Valeur": 173.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-12",
+      "Valeur": 165.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-11",
+      "Valeur": 169.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-10",
+      "Valeur": 171.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-09",
+      "Valeur": 160.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-08",
+      "Valeur": 155.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-07",
+      "Valeur": 148.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-06",
+      "Valeur": 140.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-05",
+      "Valeur": 144.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-04",
+      "Valeur": 150.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-03",
+      "Valeur": 160.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-02",
+      "Valeur": 164.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2017-01",
+      "Valeur": 156.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-12",
+      "Valeur": 155.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-11",
+      "Valeur": 146.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-10",
+      "Valeur": 129.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-09",
+      "Valeur": 125.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-08",
+      "Valeur": 125.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-07",
+      "Valeur": 121.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-06",
+      "Valeur": 110.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-05",
+      "Valeur": 101.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-04",
+      "Valeur": 100.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-03",
+      "Valeur": 99.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-02",
+      "Valeur": 94.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2016-01",
+      "Valeur": 85.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-12",
+      "Valeur": 86.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-11",
+      "Valeur": 90.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-10",
+      "Valeur": 94.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-09",
+      "Valeur": 94.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-08",
+      "Valeur": 99.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-07",
+      "Valeur": 111.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-06",
+      "Valeur": 114.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-05",
+      "Valeur": 125.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-04",
+      "Valeur": 125.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-03",
+      "Valeur": 115.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-02",
+      "Valeur": 113.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2015-01",
+      "Valeur": 112.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-12",
+      "Valeur": 108.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-11",
+      "Valeur": 111.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-10",
+      "Valeur": 110.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-09",
+      "Valeur": 109.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-08",
+      "Valeur": 107.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-07",
+      "Valeur": 104.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-06",
+      "Valeur": 96.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-05",
+      "Valeur": 92.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-04",
+      "Valeur": 89.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-03",
+      "Valeur": 89.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-02",
+      "Valeur": 91.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2014-01",
+      "Valeur": 92.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-12",
+      "Valeur": 88.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-11",
+      "Valeur": 85.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-10",
+      "Valeur": 85.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-09",
+      "Valeur": 85.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-08",
+      "Valeur": 87.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-07",
+      "Valeur": 86.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-06",
+      "Valeur": 85.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-05",
+      "Valeur": 86.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-04",
+      "Valeur": 87.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-03",
+      "Valeur": 91.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-02",
+      "Valeur": 97.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2013-01",
+      "Valeur": 94.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-12",
+      "Valeur": 95.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-11",
+      "Valeur": 91.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-10",
+      "Valeur": 90.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-09",
+      "Valeur": 96.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-08",
+      "Valeur": 90.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-07",
+      "Valeur": 92.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-06",
+      "Valeur": 91.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-05",
+      "Valeur": 92.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-04",
+      "Valeur": 93.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-03",
+      "Valeur": 94.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-02",
+      "Valeur": 95.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2012-01",
+      "Valeur": 94.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-12",
+      "Valeur": 89.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-11",
+      "Valeur": 87.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-10",
+      "Valeur": 83.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-09",
+      "Valeur": 92.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-08",
+      "Valeur": 94.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-07",
+      "Valeur": 103.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-06",
+      "Valeur": 95.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-05",
+      "Valeur": 92.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-04",
+      "Valeur": 101.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-03",
+      "Valeur": 103.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-02",
+      "Valeur": 111.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2011-01",
+      "Valeur": 109.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-12",
+      "Valeur": 106.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-11",
+      "Valeur": 103.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-10",
+      "Valeur": 105.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-09",
+      "Valeur": 101.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-08",
+      "Valeur": 97.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-07",
+      "Valeur": 88.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-06",
+      "Valeur": 87.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-05",
+      "Valeur": 96.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-04",
+      "Valeur": 108.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-03",
+      "Valeur": 103.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-02",
+      "Valeur": 96.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2010-01",
+      "Valeur": 104.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-12",
+      "Valeur": 100.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-11",
+      "Valeur": 90.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-10",
+      "Valeur": 85.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-09",
+      "Valeur": 79.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-08",
+      "Valeur": 78.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-07",
+      "Valeur": 68.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-06",
+      "Valeur": 68.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-05",
+      "Valeur": 67.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-04",
+      "Valeur": 64.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-03",
+      "Valeur": 57.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-02",
+      "Valeur": 53.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2009-01",
+      "Valeur": 55.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-12",
+      "Valeur": 51.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-11",
+      "Valeur": 56.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-10",
+      "Valeur": 59.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-09",
+      "Valeur": 74.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-08",
+      "Valeur": 71.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-07",
+      "Valeur": 72.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-06",
+      "Valeur": 75.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-05",
+      "Valeur": 86.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-04",
+      "Valeur": 88.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-03",
+      "Valeur": 99.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-02",
+      "Valeur": 102.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2008-01",
+      "Valeur": 98.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-12",
+      "Valeur": 100.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-11",
+      "Valeur": 106.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-10",
+      "Valeur": 128.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-09",
+      "Valeur": 127.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-08",
+      "Valeur": 146.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-07",
+      "Valeur": 158.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-06",
+      "Valeur": 165.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-05",
+      "Valeur": 174.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-04",
+      "Valeur": 161.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-03",
+      "Valeur": 151.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-02",
+      "Valeur": 155.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2007-01",
+      "Valeur": 179.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-12",
+      "Valeur": 204.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-11",
+      "Valeur": 209.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-10",
+      "Valeur": 186.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-09",
+      "Valeur": 164.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-08",
+      "Valeur": 160.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-07",
+      "Valeur": 161.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-06",
+      "Valeur": 155.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-05",
+      "Valeur": 170.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-04",
+      "Valeur": 153.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-03",
+      "Valeur": 123.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-02",
+      "Valeur": 113.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2006-01",
+      "Valeur": 106.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-12",
+      "Valeur": 94.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-11",
+      "Valeur": 84.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-10",
+      "Valeur": 75.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-09",
+      "Valeur": 69.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-08",
+      "Valeur": 65.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-07",
+      "Valeur": 61.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-06",
+      "Valeur": 64.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-05",
+      "Valeur": 60.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-04",
+      "Valeur": 61.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-03",
+      "Valeur": 64.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-02",
+      "Valeur": 62.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2005-01",
+      "Valeur": 58.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-12",
+      "Valeur": 54.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-11",
+      "Valeur": 52.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-10",
+      "Valeur": 52.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-09",
+      "Valeur": 49.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-08",
+      "Valeur": 49.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-07",
+      "Valeur": 49.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-06",
+      "Valeur": 51.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-05",
+      "Valeur": 52.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-04",
+      "Valeur": 52.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-03",
+      "Valeur": 55.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-02",
+      "Valeur": 52.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2004-01",
+      "Valeur": 49.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-12",
+      "Valeur": 48.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-11",
+      "Valeur": 48.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-10",
+      "Valeur": 47.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-09",
+      "Valeur": 44.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-08",
+      "Valeur": 45.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-07",
+      "Valeur": 44.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-06",
+      "Valeur": 41.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-05",
+      "Valeur": 41.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-04",
+      "Valeur": 42.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-03",
+      "Valeur": 44.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-02",
+      "Valeur": 44.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2003-01",
+      "Valeur": 45.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-12",
+      "Valeur": 48.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-11",
+      "Valeur": 46.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-10",
+      "Valeur": 47.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-09",
+      "Valeur": 47.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-08",
+      "Valeur": 47.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-07",
+      "Valeur": 49.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-06",
+      "Valeur": 49.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-05",
+      "Valeur": 51.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-04",
+      "Valeur": 56.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-03",
+      "Valeur": 57.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-02",
+      "Valeur": 54.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2002-01",
+      "Valeur": 55.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-12",
+      "Valeur": 52.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-11",
+      "Valeur": 53.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-10",
+      "Valeur": 51.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-09",
+      "Valeur": 54.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-08",
+      "Valeur": 56.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-07",
+      "Valeur": 61.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-06",
+      "Valeur": 64.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-05",
+      "Valeur": 65.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-04",
+      "Valeur": 66.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-03",
+      "Valeur": 68.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-02",
+      "Valeur": 68.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2001-01",
+      "Valeur": 67.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-12",
+      "Valeur": 72.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-11",
+      "Valeur": 76.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-10",
+      "Valeur": 78.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-09",
+      "Valeur": 86.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-08",
+      "Valeur": 79.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-07",
+      "Valeur": 74.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-06",
+      "Valeur": 72.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-05",
+      "Valeur": 78.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-04",
+      "Valeur": 73.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-03",
+      "Valeur": 71.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-02",
+      "Valeur": 68.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "2000-01",
+      "Valeur": 71.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-12",
+      "Valeur": 71.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-11",
+      "Valeur": 68.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-10",
+      "Valeur": 65.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-09",
+      "Valeur": 69.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-08",
+      "Valeur": 65.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-07",
+      "Valeur": 63.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-06",
+      "Valeur": 59.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-05",
+      "Valeur": 60.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-04",
+      "Valeur": 58.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-03",
+      "Valeur": 58.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-02",
+      "Valeur": 55.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1999-01",
+      "Valeur": 49.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-12",
+      "Valeur": 50.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-11",
+      "Valeur": 51.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-10",
+      "Valeur": 48.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-09",
+      "Valeur": 53.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-08",
+      "Valeur": 57.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-07",
+      "Valeur": 58.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-06",
+      "Valeur": 56.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-05",
+      "Valeur": 58.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-04",
+      "Valeur": 61.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-03",
+      "Valeur": 59.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-02",
+      "Valeur": 59.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1998-01",
+      "Valeur": 62.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-12",
+      "Valeur": 61.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-11",
+      "Valeur": 63.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-10",
+      "Valeur": 70.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-09",
+      "Valeur": 91.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-08",
+      "Valeur": 94.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-07",
+      "Valeur": 84.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-06",
+      "Valeur": 73.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-05",
+      "Valeur": 70.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-04",
+      "Valeur": 66.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-03",
+      "Valeur": 67.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-02",
+      "Valeur": 62.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1997-01",
+      "Valeur": 55.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-12",
+      "Valeur": 50.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-11",
+      "Valeur": 50.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-10",
+      "Valeur": 49.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-09",
+      "Valeur": 48.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-08",
+      "Valeur": 48.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-07",
+      "Valeur": 48.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-06",
+      "Valeur": 49.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-05",
+      "Valeur": 51.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-04",
+      "Valeur": 50.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-03",
+      "Valeur": 51.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-02",
+      "Valeur": 49.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1996-01",
+      "Valeur": 48.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-12",
+      "Valeur": 48.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-11",
+      "Valeur": 48.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-10",
+      "Valeur": 45.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-09",
+      "Valeur": 47.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-08",
+      "Valeur": 47.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-07",
+      "Valeur": 47.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-06",
+      "Valeur": 46.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-05",
+      "Valeur": 48.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-04",
+      "Valeur": 48.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-03",
+      "Valeur": 47.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-02",
+      "Valeur": 50.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1995-01",
+      "Valeur": 57.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-12",
+      "Valeur": 56.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-11",
+      "Valeur": 56.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-10",
+      "Valeur": 51.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-09",
+      "Valeur": 49.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-08",
+      "Valeur": 47.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-07",
+      "Valeur": 48.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-06",
+      "Valeur": 50.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-05",
+      "Valeur": 50.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-04",
+      "Valeur": 49.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-03",
+      "Valeur": 50.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-02",
+      "Valeur": 53.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1994-01",
+      "Valeur": 55.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-12",
+      "Valeur": 53.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-11",
+      "Valeur": 50.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-10",
+      "Valeur": 48.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-09",
+      "Valeur": 45.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-08",
+      "Valeur": 48.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-07",
+      "Valeur": 50.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-06",
+      "Valeur": 48.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-05",
+      "Valeur": 49.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-04",
+      "Valeur": 50.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-03",
+      "Valeur": 52.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-02",
+      "Valeur": 55.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1993-01",
+      "Valeur": 53.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-12",
+      "Valeur": 52.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-11",
+      "Valeur": 52.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-10",
+      "Valeur": 53.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-09",
+      "Valeur": 60.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-08",
+      "Valeur": 59.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-07",
+      "Valeur": 59.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-06",
+      "Valeur": 65.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-05",
+      "Valeur": 66.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-04",
+      "Valeur": 64.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-03",
+      "Valeur": 60.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-02",
+      "Valeur": 55.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1992-01",
+      "Valeur": 54.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-12",
+      "Valeur": 56.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-11",
+      "Valeur": 53.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-10",
+      "Valeur": 50.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-09",
+      "Valeur": 52.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-08",
+      "Valeur": 54.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-07",
+      "Valeur": 56.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-06",
+      "Valeur": 57.0,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-05",
+      "Valeur": 55.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-04",
+      "Valeur": 63.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-03",
+      "Valeur": 57.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-02",
+      "Valeur": 52.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1991-01",
+      "Valeur": 54.6,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-12",
+      "Valeur": 56.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-11",
+      "Valeur": 56.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-10",
+      "Valeur": 61.7,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-09",
+      "Valeur": 71.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-08",
+      "Valeur": 75.5,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-07",
+      "Valeur": 79.8,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-06",
+      "Valeur": 85.9,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-05",
+      "Valeur": 88.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-04",
+      "Valeur": 85.2,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-03",
+      "Valeur": 85.3,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-02",
+      "Valeur": 70.4,
+      "Statut": "A",
+      "Qualite": "DEF"
+    },
+    {
+      "Periode": "1990-01",
+      "Valeur": 66.1,
+      "Statut": "A",
+      "Qualite": "DEF"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+Très bien. Voici comment les utiliser quand tu pars de zéro, expliqué comme une procédure, sans code brut, étape par étape, pour BeautifulSoup puis pandas.
+
+1) Utiliser BeautifulSoup quand on débute
+Étape 1 : comprendre quand l’utiliser
+
+Tu utilises BeautifulSoup uniquement si les données sont dans une page web et pas via une API.
+
+Pose-toi cette question :
+
+Est-ce que ce que je cherche est visible dans le HTML de la page ?
+
+Si oui → BeautifulSoup est adapté.
+
+Étape 2 : récupérer une page web
+
+BeautifulSoup ne va jamais chercher une page toute seule.
+
+Procédure mentale :
+
+une autre bibliothèque récupère la page
+
+elle te donne le HTML brut
+
+BeautifulSoup reçoit ce HTML
+
+👉 Pour un débutant, retiens :
+
+BeautifulSoup lit, elle ne télécharge pas.
+
+Étape 3 : donner le HTML à BeautifulSoup
+
+Tu fournis le HTML à BeautifulSoup qui :
+
+construit une représentation interne
+
+transforme le HTML en arbre logique
+
+te permet de naviguer dedans
+
+À partir de là, tu ne vois plus du texte, mais une structure.
+
+Étape 4 : explorer la structure
+
+Avant d’extraire quoi que ce soit :
+
+tu regardes les balises (div, table, span, etc.)
+
+tu identifies les classes et ids
+
+tu comprends où se trouvent les données
+
+C’est une étape humaine :
+
+inspecter la page
+
+repérer les motifs répétitifs
+
+Étape 5 : sélectionner les éléments
+
+Ensuite, tu demandes à BeautifulSoup :
+
+“donne-moi tous les éléments de ce type”
+
+“donne-moi celui qui a tel attribut”
+
+“donne-moi ce qui est à l’intérieur”
+
+Tu travailles par sélection, jamais au hasard.
+
+Étape 6 : extraire l’information utile
+
+Une fois l’élément trouvé :
+
+tu récupères le texte
+
+ou un attribut (lien, image, valeur)
+
+tu obtiens des chaînes Python simples
+
+À ce stade, BeautifulSoup a fini son travail.
+
+Étape 7 : structurer ce que tu as extrait
+
+Les données extraites sont souvent :
+
+en vrac
+
+répétitives
+
+non structurées
+
+Tu les ranges :
+
+dans des listes
+
+dans des dictionnaires
+
+prêtes à être analysées
+
+2) Utiliser pandas quand on débute
+Étape 1 : comprendre quand l’utiliser
+
+Tu utilises pandas dès que tu as :
+
+des lignes
+
+des colonnes
+
+des valeurs répétées
+
+Même si les données viennent :
+
+d’un fichier
+
+d’une API
+
+de BeautifulSoup
+
+Étape 2 : créer un tableau de données
+
+Tu donnes à pandas :
+
+un fichier
+
+un dictionnaire
+
+une liste de données
+
+pandas transforme ça en DataFrame :
+
+un tableau structuré exploitable
+
+Étape 3 : regarder ce que tu as
+
+Avant toute manipulation :
+
+regarder les premières lignes
+
+voir les noms de colonnes
+
+vérifier les types de données
+
+C’est l’équivalent de “ouvrir le fichier”.
+
+Étape 4 : nettoyer les données
+
+Presque toujours nécessaire :
+
+gérer les valeurs manquantes
+
+corriger les types (texte → nombre)
+
+supprimer les doublons
+
+renommer des colonnes
+
+👉 pandas est surtout puissant ici.
+
+Étape 5 : filtrer et sélectionner
+
+Tu peux :
+
+garder certaines lignes
+
+choisir certaines colonnes
+
+trier
+
+filtrer selon des conditions
+
+Tu travailles logiquement, pas cellule par cellule.
+
+Étape 6 : analyser
+
+pandas permet :
+
+calculs (moyennes, totaux)
+
+regroupements (group by)
+
+comparaisons
+
+statistiques simples
+
+C’est là que les données deviennent utiles.
+
+Étape 7 : sortir le résultat
+
+Enfin, tu peux :
+
+exporter en CSV ou Excel
+
+transmettre à une autre bibliothèque
+
+afficher un résumé
+
+3) Comment les utiliser ensemble (débutant)
+
+Pipeline simple à retenir :
+
+récupérer une page web
+
+BeautifulSoup → extraire
+
+organiser les données
+
+pandas → analyser
+
+Chaque outil a un rôle unique.
+
+4) Ce qu’un débutant doit ABSOLUMENT retenir
+
+BeautifulSoup = lecture du HTML
+
+pandas = travail sur des tableaux
+
+ne pas mélanger leurs rôles
+
+toujours comprendre la structure avant d’extraire
+
+toujours inspecter les données avant d’analyser
