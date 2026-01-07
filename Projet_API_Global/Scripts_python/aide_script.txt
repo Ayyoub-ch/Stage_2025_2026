@@ -1,0 +1,192 @@
+1) Comprendre l’API que tu veux utiliser
+
+Avant Python, tu dois savoir comment l’API fonctionne :
+
+quelles URLs (endpoints) elle expose
+
+quelles données elle renvoie (souvent du JSON)
+
+si elle nécessite une authentification (c’est le cas de l’API INSEE)
+
+quelles sont les limites d’usage (quotas, fréquence)
+
+Pour l’INSEE, l’API est REST et les réponses sont en JSON.
+
+
+2) Préparer l’environnement Python
+
+Dans Python, on ne “parle” pas directement HTTP :
+
+tu utilises une bibliothèque HTTP (généralement requests)
+
+elle permet d’envoyer des requêtes GET / POST
+
+elle gère les headers, les paramètres, les réponses
+
+
+Conceptuellement :
+
+Python = client
+
+API INSEE = serveur
+
+requests = traducteur entre les deux
+
+
+3) Gérer l’authentification (clé ou token)
+
+L’INSEE utilise une authentification par token OAuth2.
+
+Méthode logique :
+
+tu envoies tes identifiants à un endpoint spécial
+
+l’API te renvoie un token temporaire
+
+ce token doit être inclus dans chaque requête suivante
+
+
+En Python, ça signifie :
+
+stocker le token dans une variable
+
+l’ajouter dans les headers HTTP
+
+vérifier sa validité (expiration)
+
+
+4) Construire la requête API
+
+Une requête API se décompose toujours en Python en :
+
+une URL (endpoint précis)
+
+une méthode HTTP (souvent GET)
+
+des paramètres (query parameters)
+
+des headers (authentification, format attendu)
+
+
+Mentalement :
+
+URL = quoi je demande
+
+paramètres = avec quelles conditions
+
+headers = qui je suis et ce que j’accepte
+
+
+5) Envoyer la requête depuis Python
+
+Python envoie la requête :
+
+il attend une réponse du serveur
+
+il reçoit un objet réponse
+
+cet objet contient :
+
+un code HTTP (200, 401, 404…)
+
+un contenu brut
+
+souvent un JSON
+
+À ce stade, Python ne “comprend” pas encore les données.
+
+
+6) Vérifier la réponse
+
+Étape cruciale :
+
+vérifier le status HTTP
+
+décider quoi faire en cas d’erreur
+
+token invalide
+
+quota dépassé
+
+paramètre incorrect
+
+Bonne pratique Python :
+
+toujours tester la réponse
+
+ne jamais supposer que l’API répond correctement
+
+
+7) Convertir la réponse en données Python
+
+Les API renvoient du JSON, Python travaille avec :
+
+-dictionnaires
+
+-listes
+
+-chaînes
+
+-nombres
+
+Donc :
+
+tu transformes le JSON en structures Python
+
+tu peux ensuite :
+
+lire les clés
+
+parcourir les listes
+
+extraire les valeurs utiles
+
+C’est ici que l’API devient réellement exploitable.
+
+
+8) Exploiter les données
+
+Une fois en Python :
+
+stockage (CSV, base de données)
+
+analyse (pandas, statistiques)
+
+affichage (graphes)
+
+automatisation (scripts planifiés)
+
+À ce stade, l’API n’est plus qu’une source de données.
+
+
+9) Gérer les contraintes réelles
+
+En Python, un script API sérieux doit aussi :
+
+gérer l’expiration du token
+
+respecter les quotas
+
+prévoir des timeouts
+
+journaliser les erreurs
+
+éventuellement réessayer les requêtes
+
+
+10) Résumé mental de la méthode
+
+En une phrase Python-friendly :
+
+Python s’authentifie → envoie une requête HTTP → reçoit du JSON → le transforme en objets Python → exploite les données.
+
+
+
+Explication des concepts clés
+Concept	Explication
+GET	Récupère des données du serveur (lecture)
+POST	Envoie des données au serveur (création)
+Status Code	200=OK, 404=Non trouvé, 500=Erreur serveur
+JSON	Format structuré pour les données (clé-valeur)
+Headers	Informations additionnelles (auth, type de contenu)
+Timeout	Temps d'attente max avant abandon (en secondes)
