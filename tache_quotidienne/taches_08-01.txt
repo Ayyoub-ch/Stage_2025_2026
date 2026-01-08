@@ -1,0 +1,23 @@
+Tâches à faire pour aujourd'hui (matin):
+
+1) Faire un point avec Salah pour pouvoir apprendre comment mettre mon code et mes données
+
+2) Récupérer les données autour du cinema, concert et évènement sportif (en temps réel) 
+
+
+1) Salah m'a expliqué comment fonctionne GCP (jobs, service, déploiement), le fonctionnement du projet (docker, ...)
+
+
+2) 09:40 : j'ai pu récupérer les données cinéma de l'API datagouv autour du cinema, seulement ce n'est pas vraiment via l'API, mais via un simple téléchargement.
+	Dernière mise à jour
+	7 mars 2025
+
+
+PISTES (cinema)
+-Apidae Cinema
+-Datagouv
+
+
+PISTES (sport)
+-API-Sports (nombre de requêtes limité à 100) + chaque sport possède sa propre API
+

@@ -1,0 +1,27 @@
+Tâches pour aujourd'hui (aprem):
+
+-Réfractor du code pour l'adapter à GCP
+-Mise sur GCP
+-Connexion au github
+-Poursuite des recherches des données / API sur les évènements sportifs et concerts
+
+
+Organisation pour GCP dans le cloud storage:
+-créer un bucket nommé: matiere_premiere_bucket qui contiendra un dossier matiere_premiere qui lui même contiendra le contenu JSON des 
+données récoltées via le script python
+
+Chose à faire: modifier dans le script python le nom du fichier afin que cela corresponde bien
+
+
+MAJ:
+On a modifié le code avec Salah, on a pu l'adapter à GCP, j'ai appris qu'il y avait une bibliothèque GCS (Google Cloud Storage), 
+qu'à l'intérieur de gcp, on peut utiliser un terminal et même VSCode, que contrairement à coder en local, coder via gcp permet de ne pas 
+devoir mettre toutes les dépendances nécessaires car il y en a qui sont d'office présentes. Après avoir modifié le code, j'ai appris
+à créer un bucket, puis un job lorsqu'on fait un job il y a quelques trucs à savoir:
+-dans le terminal afin de déployer le job et de le mettre en place il y a une commande:
+	-il faut se placer dans le dossier puis taper la commande: 
+
+gcloud builds submit --tag europe-west9-docker.pkg.dev/open-data-473312/commodity-jobs/job-injestion
+
+- à la manière des hébergements il faut déployer une nouvelle fois après avoir fait des modifications
+
