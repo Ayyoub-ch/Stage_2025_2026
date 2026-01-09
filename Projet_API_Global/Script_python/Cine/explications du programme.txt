@@ -1,0 +1,172 @@
+EXPLICATION COMPLÈTE DU SCRIPT DE RÉCUPÉRATION DES DONNÉES DE PROGRAMMATION CINÉMAS
+
+------------------------------------------------------------
+1) OBJECTIF GÉNÉRAL DU SCRIPT
+------------------------------------------------------------
+
+Ce script Python permet de :
+- interroger l’API "data-cines-indes" pour récupérer la programmation des films
+- extraire les métadonnées principales de chaque film (titre, genre, durée, cinéma, dates de séance…)
+- organiser les fichiers par département et par mois de sortie
+- sauvegarder chaque film dans un fichier JSON dédié
+- créer automatiquement les dossiers nécessaires pour stocker les fichiers
+
+Chaque fichier JSON contient :
+- les informations sur le film et le cinéma
+- les dates et heures de début/fin des séances
+- les informations de localisation et de capacité du cinéma
+
+Cette organisation permet :
+- d’automatiser la récupération des données
+- de les rendre facilement exploitables pour analyses futures
+
+------------------------------------------------------------
+2) IMPORTS DES BIBLIOTHÈQUES
+------------------------------------------------------------
+
+requests :
+- Sert à envoyer des requêtes HTTP vers l’API
+- Permet de récupérer les données JSON
+- Gère les erreurs réseau et les codes HTTP
+
+os :
+- Permet d’interagir avec le système de fichiers
+- Crée les dossiers nécessaires
+- Construit des chemins compatibles tous OS
+
+json :
+- Permet de sauvegarder les données Python en format JSON
+- Rend les fichiers lisibles et exportables pour d’autres outils
+
+datetime (commenté ici) :
+- Pour manipuler les dates si besoin (ex : calcul de mois ou tri)
+- Non utilisé dans cette version, mais utile pour extensions futures
+
+------------------------------------------------------------
+3) CONFIGURATION DES DOSSIERS
+------------------------------------------------------------
+
+- DOSSIER_PRINCIPAL : dossier racine pour stocker tous les films
+- Les sous-dossiers seront créés automatiquement selon :
+    1. Département (les deux premiers chiffres du code postal)
+    2. Date de sortie du film au format AAAA-MM
+- Utilisation de os.makedirs(..., exist_ok=True) pour éviter les erreurs si le dossier existe déjà
+
+Avantage :
+- Organisation claire et hiérarchique
+- Permet de retrouver rapidement les films par région et période
+
+------------------------------------------------------------
+4) URL DE L’API JSON
+------------------------------------------------------------
+
+- url_api : URL complète pour interroger l’API "programmation-cinemas"
+- Paramètres inclus :
+    - draft=false : récupérer uniquement les données validées
+    - size=10000 : nombre maximal de résultats
+    - finalizedAt=... : date de finalisation des données
+    - select=... : sélection des champs désirés
+    - format=json : format de sortie JSON
+
+------------------------------------------------------------
+5) RÉCUPÉRATION DES DONNÉES
+------------------------------------------------------------
+
+- Envoi d’une requête GET à l’API avec requests.get()
+- Timeout de 10 secondes pour éviter un blocage long
+- response.raise_for_status() : déclenche une erreur si le serveur renvoie un code HTTP incorrect
+- Conversion de la réponse en JSON Python
+- Extraction de la liste de films avec reponse_json.get("results", [])
+
+Gestion des erreurs :
+- Si problème réseau ou API indisponible → message d’erreur et arrêt du script
+
+------------------------------------------------------------
+6) TRAITEMENT DE CHAQUE FILM
+------------------------------------------------------------
+
+Boucle sur chaque film récupéré :
+
+1) **Extraction des métadonnées principales**
+    - titre : nom du film, nettoyage des caractères / et \ pour éviter problèmes dans les noms de fichiers
+    - departement : deux premiers chiffres du code postal du cinéma, converti en chaîne
+    - date_sortie : format AAAA-MM extrait de la date de début de séance
+    - nom_cine : nom du cinéma, nettoyage des caractères spéciaux
+
+2) **Création du dossier**
+    - Chaque film est stocké dans un chemin hiérarchique :
+      DOSSIER_PRINCIPAL / departement / date_sortie
+    - os.makedirs(..., exist_ok=True) crée automatiquement les dossiers manquants
+
+3) **Construction du chemin complet du fichier**
+    - Le nom du fichier est le titre du film + extension .json
+    - Compatible tous OS grâce à os.path.join
+
+4) **Stockage des métadonnées**
+    - Dictionnaire "metadata" contenant :
+        - informations sur le film : titre, genre, durée, URL
+        - informations sur le cinéma : nom, adresse, code postal, ville, capacité
+        - horaires de début et fin de séance
+
+5) **Sauvegarde en JSON**
+    - Avec json.dump(..., ensure_ascii=False, indent=2)
+    - Encodage UTF-8 pour conserver les accents
+    - Fichier indenté pour lecture facile
+
+------------------------------------------------------------
+7) GESTION DES ERREURS PAR FILM
+------------------------------------------------------------
+
+- Bloc try/except autour du traitement de chaque film
+- Les erreurs possibles :
+    - Problème de données manquantes
+    - Caractères invalides dans les noms
+    - Problèmes d’écriture de fichiers
+- Chaque erreur est affichée, mais le script continue pour les autres films
+
+------------------------------------------------------------
+8) TRAITEMENT DU CODE POSTAL
+------------------------------------------------------------
+
+- cinecp dans le JSON est un entier (ex: 64270)
+- Conversion en chaîne nécessaire pour utiliser le slicing [:2]
+- Exemple : str(film.get("cinecp", "00"))[:2] → "64"
+- Permet de classer les films par département
+
+------------------------------------------------------------
+9) TRAITEMENT DE LA DATE
+------------------------------------------------------------
+
+- showstart contient la date complète ISO 8601
+- On extrait seulement les 7 premiers caractères : AAAA-MM
+- Permet de créer des dossiers mensuels pour l’organisation
+
+------------------------------------------------------------
+10) RÉSUMÉ CONCEPTUEL
+------------------------------------------------------------
+
+Flux logique du script :
+
+API Cinéma
+→ Requête HTTP
+→ JSON
+→ Liste de films
+→ Extraction des métadonnées
+→ Organisation par département / mois
+→ Sauvegarde dans fichiers JSON
+
+Le script est :
+- robuste face aux erreurs réseau
+- automatisable pour mises à jour régulières
+- structuré pour analyses futures
+- prêt à être intégré dans un pipeline de traitement de données
+
+------------------------------------------------------------
+11) EXTENSIONS POSSIBLES
+------------------------------------------------------------
+
+- Utiliser datetime pour trier les films par date de sortie
+- Ajouter des sous-dossiers par genre de film
+- Automatiser la récupération quotidienne ou hebdomadaire
+- Ajouter des logs détaillés pour suivi d’exécution
+- Exploiter les données avec pandas pour statistiques et visualisation
