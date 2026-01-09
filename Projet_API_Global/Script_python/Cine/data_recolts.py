@@ -42,14 +42,16 @@ except requests.exceptions.RequestException as e:
 
 # ================================
 # TRAITEMENT DE CHAQUE FILM
-# ================================
+# ================================ 
+
+# installer wsl:  wsl --install Ubuntu-20.04
 
 for film in films:
     try:
         # Extraction des métadonnées principales
         titre = film.get("filmtitle", "Film_sans_titre").replace("/", "_").replace("\\", "_")
         departement = str(film.get("cinecp", "00"))[:1] if len(str(film.get("cinecp", "00"))) == 4 else str(film.get("cinecp", "00"))[:2]  # Les deux premiers chiffres du code postal
-        date_sortie = film.get("showstart", "Date Inconnue")[:9] # Format AAAA-MM
+        date_sortie = film.get("showstart", "Date Inconnue")[:10] # Format AAAA-MM-JJ mettre le cas 01-9 en 01-09
         nom_cine = film.get("cinenom", "Cine_inconnu").replace("/", "_").replace("\\", "_")
 
         # Création du dossier du cinéma
