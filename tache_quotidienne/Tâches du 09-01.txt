@@ -1,0 +1,9 @@
+Tâches du 09-01:
+
+Faire un script python pour extraire les données cine, les convertir en json, puis les stocker dans un dossier
+
+
+PROBLEMES:
+
+-Le fichier est en csv
+-Pas d'API apparente
