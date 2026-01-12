@@ -5,7 +5,7 @@
 import requests    # Pour récupérer les données depuis l'API
 import os          # Pour créer des dossiers et gérer les fichiers
 import json        # Pour manipuler et sauvegarder les fichiers JSON
-#from datetime import datetime
+from datetime import datetime
 
 # ================================
 # CONFIGURATION DES DOSSIERS
@@ -43,16 +43,19 @@ except requests.exceptions.RequestException as e:
 # ================================
 # TRAITEMENT DE CHAQUE FILM
 # ================================ 
-
-# installer wsl:  wsl --install Ubuntu-20.04
-
+seances = []
 for film in films:
     try:
         # Extraction des métadonnées principales
-        titre = film.get("filmtitle", "Film_sans_titre").replace("/", "_").replace("\\", "_")
+        titre = film.get("filmtitle", "Film_sans_titre").replace("/", "_").replace("\\", "_").upper().replace(":", "")
         departement = str(film.get("cinecp", "00"))[:1] if len(str(film.get("cinecp", "00"))) == 4 else str(film.get("cinecp", "00"))[:2]  # Les deux premiers chiffres du code postal
         date_sortie = film.get("showstart", "Date Inconnue")[:10] # Format AAAA-MM-JJ mettre le cas 01-9 en 01-09
         nom_cine = film.get("cinenom", "Cine_inconnu").replace("/", "_").replace("\\", "_")
+        debut_seance = film.get("showstart", "Date Inconnue")[11:19]
+        fin_seance = film.get("showend", "Date Inconnue")[11:19]
+        debut_expo = film.get("showstart", "Date Inconnue")[:10]
+        fin_expo = film.get("showend", "Date Inconnue")[:10]
+
 
         # Création du dossier du cinéma
         dossier_cine = os.path.join(DOSSIER_PRINCIPAL, departement, date_sortie)
@@ -61,30 +64,45 @@ for film in films:
         # Chemin complet du fichier JSON
         chemin_fichier = os.path.join(dossier_cine, f"{titre}.json")
 
+        # ================================
+        # MODIFICATION : transformer la durée en HHhMM
+        # ================================
+        duree_min = film.get("filmduration", 0)  # récupère la durée en minutes
+        if duree_min:
+            heures = duree_min // 60
+            minutes = duree_min % 60
+            duree_formatee = f"{heures}h{minutes:02d}"  # ex : 1h45
+        else:
+            duree_formatee = None  # ou "Inconnue"
+
+
         # Métadonnées et informations du film
+        # Création du JSON final avec META et SEANCES
         metadata = {
-            "TITRE": titre.upper().replace(":", " "),
-            "GENRE": film.get("filmgenre"),
-            "DUREE": film.get("filmduration"),
-            "SHOW_URL": film.get("showurl"),
-            #"DATE_EXPOSITION": min(film.get("showstart")) if film.get("showstart") else None,
-            # "FIN_EXPOSITION": max(film.get("showend")) if film.get("showend") else None,
-            "ID_CINE": film.get("cineid"),
-            "NOM_CINE": nom_cine,
-            "ADRESSE_CINE": film.get("cineadresse"),
-            "CP_CINE": film.get("cinecp"),
-            "VILLE_CINE": film.get("cineville"),
-            "CAPACITE_CINE": film.get("auditoriumcapacity"),
-            "DEBUT_SEANCE": film.get("showstart"),
-            "FIN_SEANCE": film.get("showend")
+            "META": {
+                "TITRE": titre, 
+                "GENRE": film.get("filmgenre"), 
+                "DUREE": duree_formatee, 
+                "SHOW_URL": film.get("showurl"), 
+                "ID_CINE": film.get("cineid"), 
+                "NOM_CINE": nom_cine, 
+                "ADRESSE_CINE": film.get("cineadresse"), 
+                "CP_CINE": film.get("cinecp"), 
+                "VILLE_CINE": film.get("cineville"), 
+                "CAPACITE_CINE": film.get("auditoriumcapacity"), 
+                "DATE_EXPOSITION": debut_expo, 
+                "FIN_EXPOSITION": fin_expo
+            },
+            "SEANCES": [
+                {"DEBUT_SEANCE": s[0], "FIN_SEANCE": s[1]} for s in [(debut_seance, fin_seance)]
+            ]
         }
 
-        # Sauvegarde en JSON
+        # Sauvegarde JSON
         with open(chemin_fichier, "w", encoding="utf-8") as f:
             json.dump(metadata, f, ensure_ascii=False, indent=2)
 
         print(f"✅ Fichier créé : {chemin_fichier}")
 
     except Exception as e:
-        # Ici film est toujours un dict donc .get fonctionne
-        print(f"❌ Erreur lors du traitement du film {film.get('filmtitle', 'INCONNU')}: {e}")
+        print(f"❌ Erreur pour le film {titre} : {e}")
