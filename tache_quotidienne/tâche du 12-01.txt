@@ -35,7 +35,7 @@ https://data-cines-indes.koumoul.com/data-fair/api/v1/datasets/programmation-cin
 
 
 
-Choses aites:
+Choses faites:
 -Modification de l'heure de séance en HEURE (avant en minute)
 -Modification des dates (séparation entre la date et les heures de visionnage)
 
@@ -48,6 +48,7 @@ je dois avoir le filmid et le filmnom et en fonction de ça je dois obtenir le m
 
 
 PROBLEME: Plusieurs séances un même jour (comment faire)
+
 
 
 
