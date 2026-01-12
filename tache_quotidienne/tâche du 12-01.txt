@@ -1,0 +1,93 @@
+tâche du 12-01
+
+modification du script et vérification pour qu'il soit conforme aux normes demandées
+
+correction du script au niveau des dates de parution, utilisation de la bibliothèque datetime
+
+
+vérification des données afin de vérifier qu'elles n'aient rien de louche
+
+
+
+pour avoir la date de début d'exposition on doit prendre parmi tous les exemplaires du film, min(la_date_de_sortie)
+pour avoir la date de fin d'exposition on doit prendre parmi tous les exemplaires du film, max(la_date_de_fin_seance)
+
+
+brouillon:
+
+debut_seance_str = film.get("showstart", "Date Inconnue").replace("T", " ").replace("Z", "")
+        debut_seance_dt = datetime.strptime(debut_seance_str, "%Y-%m-%d %H:%M:%S")
+        fin_seance_str = film.get("showend", "Date Inconnue").replace("T", " ").replace("Z", "")
+        fin_seance_dt = datetime.strptime(fin_seance_str, "%Y-%m-%d %H:%M:%S")
+
+
+
+
+POUR CET APREM: (reprendre le csv et le convertir), faire en sorte de pouvoir mettre les dates d'exposition -->
+à partir de l'id de cine et du film, trouver le minimum des dates
+faire pareil pour la date de fin avec le max des dates de fin de séance
+
+
+
+Brouillon:
+
+https://data-cines-indes.koumoul.com/data-fair/api/v1/datasets/programmation-cinemas/lines?draft=false&finalizedAt=2026-01-09T01:15:34.235Z&page=1&select=filmtitle,filmgenre,filmduration,showstart,showend,showurl,cineid,cinenom,cineadresse,cinecp,cineville,auditoriumcapacity&format=csv
+
+
+
+Choses aites:
+-Modification de l'heure de séance en HEURE (avant en minute)
+-Modification des dates (séparation entre la date et les heures de visionnage)
+
+
+
+Schéma:
+
+
+je dois avoir le filmid et le filmnom et en fonction de ça je dois obtenir le minimum des dates de sorties
+
+
+PROBLEME: Plusieurs séances un même jour (comment faire)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
