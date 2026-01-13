@@ -1,0 +1,6 @@
+Petit constant autour des séances:
+
+
+Les séances sont justes car en regardant le json qui est dans ce lien: https://data-cines-indes.koumoul.com/data-fair/api/v1/datasets/programmation-cinemas/lines?draft=false&size=10000&finalizedAt=2026-01-09T01:15:34.235Z&page=1&select=filmtitle,filmdirector,filmcast,filmstoryline,filmgenre,filmcountry,filmduration,showstart,showend,evenement,auditoriumnumber,filmversion,filmaudio,filmtrailer,filmposter,showid,filmid,showurl,cineid,cinenom,cineadresse,cinecp,cineville,description,auditoriumcapacity&format=json
+Par exemple on cherche les films AVATAR chez Clap Cine les valeurs des séances sont bonnes
+Pareil pour la plupart des films.
