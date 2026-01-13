@@ -43,18 +43,48 @@ except requests.exceptions.RequestException as e:
 # ================================
 # TRAITEMENT DE CHAQUE FILM
 # ================================ 
-seances = []
+seances={}
+expos={}
 for film in films:
     try:
         # Extraction des métadonnées principales
         titre = film.get("filmtitle", "Film_sans_titre").replace("/", "_").replace("\\", "_").upper().replace(":", "")
+        film_id = film.get("filmid", "ID_Inconnu")
+        cine_id = film.get("cineid", "Cine_Inconnu")
         departement = str(film.get("cinecp", "00"))[:1] if len(str(film.get("cinecp", "00"))) == 4 else str(film.get("cinecp", "00"))[:2]  # Les deux premiers chiffres du code postal
         date_sortie = film.get("showstart", "Date Inconnue")[:10] # Format AAAA-MM-JJ mettre le cas 01-9 en 01-09
         nom_cine = film.get("cinenom", "Cine_inconnu").replace("/", "_").replace("\\", "_")
         debut_seance = film.get("showstart", "Date Inconnue")[11:19]
         fin_seance = film.get("showend", "Date Inconnue")[11:19]
-        debut_expo = film.get("showstart", "Date Inconnue")[:10]
-        fin_expo = film.get("showend", "Date Inconnue")[:10]
+        heures_visionnage = {"DEBUT_SEANCE": debut_seance, "FIN_SEANCE": fin_seance } #, "NOM CINE": nom_cine, "JOUR_SEANCE": date_sortie
+
+        key=(film_id, nom_cine, date_sortie)
+
+        if key not in seances:
+            seances[key] = []
+        seances[key].append(heures_visionnage)
+
+
+        # Gestion des dates d'exposition
+
+        key_expo=(film_id, nom_cine, departement)
+
+        date_obj = datetime.strptime(date_sortie, "%Y-%m-%d").date()
+
+        if key_expo not in expos:
+            expos[key_expo] = {"dates": set()}  # utiliser un set pour éviter les doublons
+
+        expos[key_expo]["dates"].add(date_obj)
+
+        
+        dates = expos[key_expo]["dates"]
+        debut_expo = min(dates)
+        for date in dates:
+            if date > debut_expo:
+                date = max(dates)
+                fin_expo = date
+            else:
+                fin_expo = debut_expo
 
 
         # Création du dossier du cinéma
@@ -79,7 +109,7 @@ for film in films:
         # Métadonnées et informations du film
         # Création du JSON final avec META et SEANCES
         metadata = {
-            "META": {
+            "DONNEES GENERALES": {
                 "TITRE": titre, 
                 "GENRE": film.get("filmgenre"), 
                 "DUREE": duree_formatee, 
@@ -90,18 +120,15 @@ for film in films:
                 "CP_CINE": film.get("cinecp"), 
                 "VILLE_CINE": film.get("cineville"), 
                 "CAPACITE_CINE": film.get("auditoriumcapacity"), 
-                "DATE_EXPOSITION": debut_expo, 
-                "FIN_EXPOSITION": fin_expo
+                "DATE_EXPOSITION": str(debut_expo), 
+                "FIN_EXPOSITION": str(fin_expo),
             },
-            "SEANCES": [
-                {"DEBUT_SEANCE": s[0], "FIN_SEANCE": s[1]} for s in [(debut_seance, fin_seance)]
-            ]
+            "SEANCES": seances[key],
         }
 
         # Sauvegarde JSON
         with open(chemin_fichier, "w", encoding="utf-8") as f:
             json.dump(metadata, f, ensure_ascii=False, indent=2)
-
         print(f"✅ Fichier créé : {chemin_fichier}")
 
     except Exception as e:
