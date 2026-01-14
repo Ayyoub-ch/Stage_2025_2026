@@ -1,0 +1,19 @@
+But d'aujourd'hui: Essayer d'avoir le début et la fin d'exposition d'un film en fonction de son département, son cinéma, de son nom (ou id) et de sa date de d'apparition
+
+Exemple: Avatar dans le cinéma Clap Cine est sorti le 11 janvier 2026 jusqu'au 13 janvier
+
+
+Il faut prendre une clé qui prendra le département, l'id du film et l'id du cine
+
+
+
+
+REMARQUES:
+-il faudra également faire attention à faire en sorte que la date de sortie du tout premier film dans un département ça ne soit pas la date de la première séance
+-il faudrait aussi une liste de date en fonction du département, du film et du ciné et que'on puisse prendre le minimum et le maximum à chaque fois
+
+Ce que j'ai réussi à faire:
+
+-Corriger les erreurs sur les dates : debug, vérification des données, aperçu que les données horaires étaient en seconde ET en minute
+-rectification des dates de représentation: espacer le code et le séparer (séparation des boucle for afin d'avoir les calculs pour chaque 
+paramètre (exposition et séances séparées) qui restent cohérents)
