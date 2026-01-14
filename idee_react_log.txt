@@ -1,0 +1,178 @@
+Voici une liste concrète et utile d’idées d’applications mobiles adaptées à une ESN (Entreprise de Services du Numérique), classées par usage réel (interne, consultants, managers, clients).
+Je privilégie des idées réalistes, à fort ROI, pas des gadgets.
+
+📱 Applications pour les consultants (cœur métier)
+1️⃣ Suivi de temps & activités (Timesheet intelligent)
+
+Problème : saisie du CRA pénible et oubliée
+Fonctionnalités :
+
+Saisie rapide du temps (jour/semaine)
+
+Suggestions automatiques (missions récurrentes)
+
+Validation manager
+
+Export vers ERP (SAP, Odoo, Sage)
+
+💡 Valeur ESN : facturation fiable, moins d’erreurs
+
+2️⃣ Gestion de mission & objectifs
+
+Problème : manque de visibilité sur la mission en cours
+Fonctionnalités :
+
+Infos client / mission
+
+Objectifs & livrables
+
+Contacts clés
+
+Dates importantes (renouvellement, fin de mission)
+
+💡 Valeur ESN : consultants plus autonomes
+
+3️⃣ Notes & compte-rendus client
+
+Problème : CR oubliés ou dispersés
+Fonctionnalités :
+
+Notes vocales → texte
+
+Templates de CR
+
+Historique par client
+
+Partage avec manager
+
+💡 Valeur ESN : capitalisation du savoir
+
+🧑‍💼 Applications pour managers & commerciaux
+4️⃣ Staffing & disponibilité en temps réel
+
+Problème : savoir “qui est dispo et quand”
+Fonctionnalités :
+
+Disponibilité consultants
+
+Compétences & niveaux
+
+Fin de mission à venir
+
+Alertes de bench
+
+💡 Très forte valeur business
+
+5️⃣ CRM mobile simplifié
+
+Problème : infos commerciales dispersées
+Fonctionnalités :
+
+Clients & opportunités
+
+Relances automatiques
+
+Historique des échanges
+
+Signature électronique
+
+💡 Meilleur suivi commercial terrain
+
+6️⃣ Validation & alertes managers
+
+Problème : validations lentes
+Fonctionnalités :
+
+Validation CRA
+
+Congés
+
+Notes de frais
+
+Alertes push
+
+💡 Gain de temps énorme
+
+👥 Applications RH & internes
+7️⃣ RH mobile (indispensable)
+
+Fonctionnalités :
+
+Congés & absences
+
+Fiches de paie
+
+Documents RH
+
+Entretiens annuels
+
+💡 Attendu par tous les collaborateurs
+
+8️⃣ Suivi de compétences & formations
+
+Problème : compétences mal cartographiées
+Fonctionnalités :
+
+Auto-évaluation
+
+Certifications
+
+Formations recommandées
+
+Matching mission/compétences
+
+💡 Aide au staffing + montée en compétences
+
+9️⃣ Feedback mission & satisfaction consultant
+
+Fonctionnalités :
+
+Feedback fin de mission
+
+Alertes risques (mission qui se passe mal)
+
+Historique RH
+
+💡 Réduction du turnover
+
+🤝 Applications orientées clients
+🔟 Portail client mobile
+
+Fonctionnalités :
+
+Suivi mission
+
+CRA validés
+
+Factures
+
+Contact direct consultant/manager
+
+💡 Image pro & transparence
+
+🚀 Idées différenciantes (plus innovantes)
+1️⃣1️⃣ Alerte opportunité interne
+
+Push quand une mission correspond à ton profil
+
+Candidature interne rapide
+
+1️⃣2️⃣ Assistant ESN (IA)
+
+“Qui est dispo sur du Java ?”
+
+“Quel est mon taux de facturation ?”
+
+“Quels clients arrivent à échéance ?”
+
+1️⃣3️⃣ Onboarding consultant
+
+Checklist arrivée
+
+Accès outils
+
+Contacts clés
+
+Culture ESN
+
+💡 Ultra utile pour nouvelles recrues
