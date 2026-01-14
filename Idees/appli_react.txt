@@ -1,0 +1,272 @@
+APPLICATION MOBILE ESN – STACK REACT NATIVE
+CONTEXTE
+
+Application mobile destinée à une ESN (Entreprise de Services du Numérique), développée en React Native, visant à améliorer la gestion des consultants, des managers et des processus internes (CRA, staffing, RH, etc.).
+
+IDÉES D’APPLICATIONS UTILES POUR UNE ESN
+
+1.1 Timesheet / CRA mobile (priorité n°1)
+
+Saisie du temps journalier ou hebdomadaire
+
+Copie automatique de la semaine précédente
+
+Validation par le manager
+
+Historique des CRA
+
+Mode offline + synchronisation
+
+Export vers ERP / facturation
+
+Valeur :
+
+Gain de temps
+
+Fiabilité de la facturation
+
+Forte adoption par les consultants
+
+1.2 Gestion de mission consultant
+
+Informations client
+
+Dates de début / fin de mission
+
+Objectifs et livrables
+
+Contacts clés
+
+Alertes fin de mission
+
+Valeur :
+
+Autonomie des consultants
+
+Meilleure visibilité ESN
+
+1.3 Staffing & disponibilité
+
+Liste des consultants
+
+Disponibilité en temps réel
+
+Filtres par compétences
+
+Alertes bench / fin de mission
+
+Valeur :
+
+Optimisation du staffing
+
+Réduction du bench
+
+1.4 RH mobile
+
+Demande et validation de congés
+
+Accès aux documents RH (PDF)
+
+Fiches de paie
+
+Entretiens annuels
+
+Valeur :
+
+Centralisation RH
+
+Attendu par les collaborateurs
+
+1.5 Validation manager
+
+Validation CRA
+
+Validation congés
+
+Validation notes de frais
+
+Notifications push
+
+Valeur :
+
+Gain de temps manager
+
+Fluidité des processus
+
+1.6 Suivi compétences & formations
+
+Auto-évaluation
+
+Certifications
+
+Historique des formations
+
+Matching compétences / missions
+
+Valeur :
+
+Meilleur staffing
+
+Montée en compétences
+
+1.7 Portail client
+
+Suivi mission
+
+CRA validés
+
+Factures
+
+Communication ESN / client
+
+Valeur :
+
+Transparence
+
+Image professionnelle
+
+MVP RECOMMANDÉ
+
+MVP conseillé : Timesheet / CRA mobile
+
+Fonctionnalités MVP :
+
+Authentification
+
+Liste des missions
+
+Saisie du temps
+
+Modification / suppression
+
+Validation manager
+
+Historique
+
+Évolutions possibles :
+
+Mode offline
+
+Notifications push
+
+Signature électronique
+
+Export PDF
+
+STACK TECHNIQUE – REACT NATIVE
+
+Framework :
+
+React Native
+
+Expo (recommandé)
+
+Navigation :
+
+@react-navigation/native
+
+State management :
+
+Zustand (simple)
+ou
+
+Redux Toolkit (projet plus large)
+
+Formulaires :
+
+react-hook-form
+
+Appels API :
+
+axios
+
+Dates / heures :
+
+dayjs
+
+Offline & cache :
+
+react-query
+
+UI :
+
+react-native-paper
+ou
+
+native-base
+
+Notifications :
+
+expo-notifications
+
+ARCHITECTURE REACT NATIVE
+
+Structure recommandée :
+
+src/
+
+api/ (services API)
+
+components/ (composants réutilisables)
+
+features/ (logique métier par domaine)
+
+auth/
+
+timesheet/
+
+staffing/
+
+rh/
+
+navigation/
+
+store/
+
+hooks/
+
+utils/
+
+theme/
+
+Architecture orientée "features" pour la scalabilité ESN.
+
+BACKEND (INDISPENSABLE)
+
+API REST ou GraphQL
+
+Auth JWT / OAuth2
+
+Gestion des rôles (consultant / manager / admin)
+
+Stack classique :
+
+Node.js / NestJS
+
+PostgreSQL
+
+Redis
+
+Stockage documents : S3 / MinIO
+
+AVANTAGES DE REACT NATIVE POUR UNE ESN
+
+Une seule base de code iOS / Android
+
+Développement rapide
+
+Facilité de maintenance
+
+Bon support des formulaires et workflows
+
+Intégration simple avec APIs existantes
+
+PRIORISATION CONSEILLÉE
+
+Timesheet / CRA
+
+Validation manager
+
+RH mobile
+
+Staffing
