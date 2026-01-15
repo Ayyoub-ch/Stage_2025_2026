@@ -51,6 +51,13 @@ for festival in festivals_data:
         else:
             departement = festival.get("code_postal_de_la_commune_principale_de_deroulement")
         
+        # Gestion des codes postaux complémentaires
+        codes_postaux_raw = festival.get("code_postal_de_la_commune_principale_de_deroulement")
+        if len(codes_postaux_raw)>5 and "," in codes_postaux_raw:
+            codes_postaux = [code.strip() for code in codes_postaux_raw.split(",") if code.strip()]
+        else:
+            codes_postaux = []
+            
         # Gestion des sous-catégories
         sous_categories={"SOUS_CATEGORIE_SPECTACLE_VIVANT": festival.get("sous_categorie_spectacle_vivant"),
                          "SOUS_CATEGORIE_MUSIQUE": festival.get("sous_categorie_musique"),
@@ -65,10 +72,12 @@ for festival in festivals_data:
             "DONNEES GENERALES": {
                 "IDENTIFIANT": festival.get("identifiant"),
                 "TITRE": festival.get("nom_du_festival"),
+                "ENVERGURE_TERRITORIALE": festival.get("envergure_territoriale"),
                 "REGION": festival.get("region_principale_de_deroulement"),
                 "DEPARTEMENT": festival.get("departement_principal_de_deroulement"),
                 "COMMUNE": festival.get("showurl"),
                 "CODE_POSTAL": festival.get("code_postal_de_la_commune_principale_de_deroulement"),
+                "CODES_POSTAUX_COMPLEMENTAIRES": codes_postaux,
                 "NUMERO_VOIE": festival.get("numero_de_voie"),
                 "TYPE_VOIE": festival.get("type_de_voie_rue_avenue_boulevard_etc"),
                 "NOM_VOIE": festival.get("nom_de_la_voie"),
