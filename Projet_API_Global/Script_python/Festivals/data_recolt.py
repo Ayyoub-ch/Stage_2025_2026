@@ -49,15 +49,16 @@ for festival in festivals_data:
         if cp.isdigit() or re.search(r'\d{2}', cp):
             departement = cp[:1] if len(cp) == 4 else cp[:2]
         else:
-            departement = festival.get("code_postal_de_la_commune_principale_de_deroulement")
+            departement = "Non répertorié"
         
         # Gestion des codes postaux complémentaires
         codes_postaux_raw = festival.get("code_postal_de_la_commune_principale_de_deroulement")
+
         if len(codes_postaux_raw)>5 and "," in codes_postaux_raw:
             codes_postaux = [code.strip() for code in codes_postaux_raw.split(",") if code.strip()]
         else:
             codes_postaux = []
-            
+
         # Gestion des sous-catégories
         sous_categories={"SOUS_CATEGORIE_SPECTACLE_VIVANT": festival.get("sous_categorie_spectacle_vivant"),
                          "SOUS_CATEGORIE_MUSIQUE": festival.get("sous_categorie_musique"),
