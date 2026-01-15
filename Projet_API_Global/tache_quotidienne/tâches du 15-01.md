@@ -15,7 +15,9 @@ comme les années non conformes ou les codes postaux multiples
 
 
 
-Pour le Football ou le sport en général, je dois voir ce site là pour récolter les données efficacement: https://www.football-data.org/documentation/quickstart
+Pour le Football ou le sport en général, je dois voir ce site là pour récolter les données efficacement: 
+https://www.football-data.org/documentation/quickstart
+https://www.thesportsdb.com/documentation#search_v1 (lui bof bof)
 
 
 PARTIE FESTIVAL : (FAITE)
@@ -58,6 +60,7 @@ cas aberrants:
 "annee\_de\_creation\_du\_festival": "2012 a eu lieu le premier Coup de théâtre",
 
 "annee\_de\_creation\_du\_festival": "01/01/2016 00:00",
+
 
 
 
