@@ -1,0 +1,18 @@
+But d'aujourd'hui:
+
+MATIN: 
+-Essayer de comprendre l'API de Football
+-Dissocier et identifier les différents URLs disponibles afin de pouvoir établir un triage et une sélection afin de fusionner tout cela dans un JSON correct
+
+-Faire des tests puis faire valider par Jean-Phillipe
+
+
+APREM:
+-Créer banche git en ligne de commande et avec ssh
+-mettre les scripts à l'intérieur
+-chaque branche = un type de script
+
+Poursuite des tests sur l'API Football
+Amélioration des scripts
+Possibilité de générer des dossiers et des fichiers JSON
+Ajout d'un script main.py qui permet d'executer les 7 scripts à la suite 
