@@ -30,7 +30,7 @@ for team in teams:
 
                 fichier_json = os.path.join(
                     chemin,
-                    f"{nom.replace(' ', '_')}_{team}.json"
+                    f"{nom.replace(' ', '_')}.json" #_{team} pour avoir l'id aussi
                 )
 
                 with open(fichier_json, 'w', encoding='utf-8') as f:
