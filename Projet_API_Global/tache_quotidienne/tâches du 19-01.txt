@@ -6,4 +6,9 @@ But de ce matin:
 
 But de cet aprem:
 -mettre sur gcp
+
 -chercher peut être encore un peu pour voir si on ne peut pas encore compléter les scripts
+
+
+Faits aujourd'hui:
+-Recheche d'une nouvelle API SPORT, test et essaie de script afin de récolter de meilleurs infos
