@@ -1,0 +1,34 @@
+But d'aujourd'hui:
+
+Réussir à récupérer :
+
+-les coupes en fonction du pays et de l'id de la ligue (Top 14, Pro D2, 6 Nations, ...)
+-récupérer les matchs et la ligue associée (faire en fonction de l'id de la ligue)
+
+GET /leagues, country=France > id leagues (Top 14, Pro D2, 6 Nations, ...)
+
+
+GET /games, league = chaque id récupéré précédemment
+ PROBLEME : je n'ai droit qu'à 2022 ou 2024 autrement je dois payer
+
+
+
+
+(Fait)
+
+
+Aprem:
+
+-créer le script sur les données de l'inflation(Fait)
+url =https://webstat.banque-france.fr/api/explore/v2.1/catalog/datasets/observations/exports/json/?where=series_key+IN+%28%22ICP.M.FR.N.000000.4.ANR%22%29&order_by=-time_period_start&apikey=6a1179509ee33d99a799f02a521d4cbb7f422df4cc1a2676ef63f694
+
+-inclure sur gcp les données
+
+
+fait: création du code pour les routers, il ne reste plus qu'à adapter le reste
+
+
+plus tard:
+
+-inclure les "swaggers" sur l'api 
+-faire du css pour l'appli

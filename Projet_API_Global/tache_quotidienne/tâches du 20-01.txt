@@ -1,0 +1,10 @@
+Choses faites:
+-Vérification d'une 2e l'API Football et vérification des scripts
+-Exploitation de l'API rugby et rédaction de scripts pour récolter les infos
+
+Scripts faits:
+-matchs français
+-ligues
+-zone
+-équipes
+-main
