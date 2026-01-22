@@ -1,0 +1,26 @@
+But d'aujourd'hui:
+
+-Coder les fonctions pour l'API des Matières Premières
+-Créer des jobs pour mes parties
+
+10:00 :
+-création du job inflation
+-finition de la partie matière première (création de la fonction pour l'API)
+
+
+
+11:21 :
+-finition du job inflation
+-création du bucket et du code pouvant le remplir 
+
+16:45:
+-modification des codes nécessaires pour le déploiement des apis
+résultat: pa d'accès public + echec du déploiement en étant avec Matthieu
+but pour après: repéré les erreurs dans les commandes et les corriger 
+
+
+Erreur:
+
+ File "/app/routers/inflation_date.py", line 20, in download_by_date
+    blobs = get_blobs_for_inflation_date(annee_inflation, date)
+TypeError: get_blobs_for_inflation_date() takes 1 positional argument but 2 were given
