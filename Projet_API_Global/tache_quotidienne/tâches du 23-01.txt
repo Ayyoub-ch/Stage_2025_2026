@@ -1,0 +1,17 @@
+But de ce matin:
+-Déploiement fonctionnel de la partie inflation
+
+
+11:41:
+-J'ai réussi à déployer le swagger API afin que la demande des données d'une date soit prise en compte
+
+Difficultés:
+-Comprendre le code du collègue Salah, l'analyser et le modifier afin qu'il s'adapte à ma demande
+
+But de cet aprem:
+-Réussi le déploiement du swagger pour la partie inflation mais pour une période donnée (entre deux années au maximum)
+
+15:18:
+
+J'ai réussi à faire déployer l'application après un petit problème, (à cause d'un continue)
+Seulement ça me renvoie uniquement le premier fichier 
