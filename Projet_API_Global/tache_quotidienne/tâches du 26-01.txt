@@ -1,0 +1,55 @@
+But d'aujourd'hui:
+
+
+Matin:
+Faire l'API pour les matières premières ✔️
+
+
+Aprem:
+
+(Importer) COMPRENDRE le code de Streamlit
+
+
+Commodity :
+->Besoin de remplacer le nom des données (pour les nettoyer) avec la fonction rename_meteo_columns (mais avec ceux de ma partie)
+->Son nom sera Commdity by Type 
+->On aura la possibilité de check chaque matière et en fonction d'une période qu'on pourra marquer (prendre exemple de l'année via une valeur ou un simple click qui fait défiler)
+
+Pour chaque case qu'il y aura ex: or argent bronze platine cobalt ….
+Il y aura son fichier json en version tableau et en version brute (en fonction d'un bouton: s'inspirer de ce qui existe déjà)
+
+
+
+
+
+
+Ce que j'ai fait au final:
+
+-Création et test de l'API des matières premières
+-Initiation à Streamlit et test pour comprendre son fonctionnement
+-Test d'un CSS avec les couleurs de l'entreprise afin d'avoir une identité visuelle
+
+
+
+
+
+
+
+
+
+
+Petite partie css pour donner de la vie à cette appli:
+
+BLANC: #F6F4FB
+
+GRIS PALE: #E3DAF5
+
+BLUE FONCE: #2E2B7C
+
+VIOLET FONCE FONCE: #5702D7
+
+VIOLET: #9748FD
+
+ROSE PALE: #E255CE
+
+ORANGE CLAIR: #FF9267
