@@ -38,7 +38,8 @@ Ce que j'ai fait au final:
 
 
 
-Petite partie css pour donner de la vie à cette appli:
+Petite partie css pour donner de la vie à cette appli: PRENDRE EN COMPTE LES POURCENTAGES
+
 
 BLANC: #F6F4FB
 
@@ -46,10 +47,10 @@ GRIS PALE: #E3DAF5
 
 BLUE FONCE: #2E2B7C
 
-VIOLET FONCE FONCE: #5702D7
+VIOLET FONCE FONCE: #5702D7 0%
 
-VIOLET: #9748FD
+VIOLET: #9748FD 30%
 
-ROSE PALE: #E255CE
+ROSE PALE: #E255CE 60%
 
-ORANGE CLAIR: #FF9267
+ORANGE CLAIR: #FF9267 90%
