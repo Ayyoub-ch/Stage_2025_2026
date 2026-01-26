@@ -1,0 +1,157 @@
+La méthode officielle et recommandée pour customiser Streamlit : le fichier .streamlit/config.toml.
+
+Structure de base
+Créez un fichier .streamlit/config.toml à la racine de votre projet :
+
+mon-app/
+├── app.py
+├── .streamlit/
+│   └── config.toml
+└── requirements.txt
+Configuration complète d'un thème
+[theme]
+# Couleur primaire (boutons, liens, sélections)
+primaryColor = "#FF4B4B"
+
+# Couleur de fond principale
+backgroundColor = "#FFFFFF"
+
+# Couleur de fond secondaire (widgets, code blocks)
+secondaryBackgroundColor = "#F0F2F6"
+
+# Couleur du texte
+textColor = "#262730"
+
+# Police par défaut
+font = "sans serif"
+Toutes les propriétés disponibles
+Couleurs principales
+[theme]
+# Couleur d'accent (boutons, hover, focus)
+primaryColor = "#FF4B4B"
+
+# Fond principal de l'app
+backgroundColor = "#FFFFFF"
+
+# Fond des éléments (inputs, code blocks)
+secondaryBackgroundColor = "#F0F2F6"
+
+# Couleur du texte
+textColor = "#262730"
+
+# Couleur des liens
+linkColor = "#FF4B4B"
+
+# Souligner les liens ?
+linkUnderline = true
+
+# Couleur du texte dans le code inline
+codeTextColor = "#E83E8C"
+
+# Fond des code blocks
+codeBackgroundColor = "#F8F9FA"
+Bordures et radius
+[theme]
+# Couleur des bordures (widgets non focus)
+borderColor = "#E6E9EF"
+
+# Couleur bordure dataframes
+dataframeBorderColor = "#E1E4E8"
+
+# Afficher bordures des widgets ?
+showWidgetBorder = true
+
+# Radius général (boutons, inputs, code)
+baseRadius = "0.5rem"
+
+# Radius spécifique boutons
+buttonRadius = "0.5rem"
+Fonts et tailles
+[theme]
+# Police par défaut
+font = "sans serif"
+
+# Police des titres
+headingFont = "sans serif"
+
+# Police du code
+codeFont = "monospace"
+
+# Taille de base
+baseFontSize = "16px"
+
+# Poids de base
+baseFontWeight = 400
+
+# Taille code
+codeFontSize = "14px"
+Formats de couleurs acceptés
+Streamlit accepte 4 formats :
+
+# 1. Noms CSS
+primaryColor = "darkBlue"
+
+# 2. HEX
+primaryColor = "#483D8B"
+
+# 3. RGB
+primaryColor = "rgb(106, 90, 205)"
+
+# 4. HSL
+primaryColor = "hsl(248, 53%, 58%)"
+Exemple : Thème corporate moderne
+[theme]
+# Identité visuelle entreprise
+primaryColor = "#0066CC"          # Bleu corporate
+backgroundColor = "#FAFBFC"       # Gris très clair
+secondaryBackgroundColor = "#FFFFFF"  # Blanc pur
+textColor = "#1F2937"             # Gris foncé
+
+# Design moderne
+baseRadius = "0.75rem"            # Coins arrondis
+buttonRadius = "9999px"           # Boutons pilules
+showWidgetBorder = false          # Sans bordures
+
+# Typographie professionnelle
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+baseFontSize = "16px"
+baseFontWeight = 400
+Palette de couleurs étendue
+Streamlit supporte une palette de 7 couleurs pour les éléments markdown, métriques et alertes :
+
+[theme]
+# Palette complète
+red = "#FF4B4B"
+redBackground = "#FFF0F0"
+redText = "#CC0000"
+
+orange = "#FF8C00"
+orangeBackground = "#FFF4E6"
+orangeText = "#CC6600"
+
+yellow = "#FFD700"
+yellowBackground = "#FFFBEB"
+yellowText = "#996600"
+
+green = "#00CC66"
+greenBackground = "#F0FFF4"
+greenText = "#008844"
+
+blue = "#0066CC"
+blueBackground = "#E6F2FF"
+blueText = "#004499"
+
+violet = "#9966FF"
+violetBackground = "#F5F0FF"
+violetText = "#6633CC"
+
+gray = "#6B7280"
+grayBackground = "#F9FAFB"
+grayText = "#374151"
+Ces couleurs affectent :
+
+st.success(), st.error(), st.warning(), st.info()
+Colonnes de dataframes colorées
+Avatars et badges
+Markdown avec couleurs

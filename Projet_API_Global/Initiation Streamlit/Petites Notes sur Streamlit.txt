@@ -1,0 +1,78 @@
+Petites Notes sur Streamlit:
+
+Le langage est simpliste:
+- reste sur Python (c'est une bibliothèque quoi)
+- pas de balise
+- pas d'alinéas
+- chaque fonctionnalité est régie par une petite fonction exemple: write -> du texte, header -> l'entête etc …..
+
+
+Il est utile pour ce qui est data, site plus que simpliste sans prise de tête et surtout pour avoir du visuel, il ne remplace pas du tout le css mais il peut l'accompagner.
+
+Liens utiles: https://www.datacamp.com/fr/tutorial/streamlit
+
+Mémo des fonctions:
+
+import streamlit as st : permet l'import de l'application
+
+streamlit run file_name.py : Pour exécuter le programme
+
+FONCTIONS:
+
+
+TITRES 
+
+st.title() : Titre de l'application  
+
+st.header(): En-tête d'une section 
+
+st.markdown(): Démarquage d'une section
+
+st.subheader(): Sous-titre d'une section
+
+st.caption(): Légende
+
+st.code(): Code
+
+st.latex(): Expressions mathématiques formatées en LaTeX. ex: st.latex(r''' a + b = c ''')
+
+
+MEDIAS
+
+st.image(): Image
+
+st.audio(): Audio
+
+st.video(): Vidéo
+
+
+WIDGETS DE SAISIE
+
+st.checkbox(): Vérifie une valeur booléenne ex: Lorsque la case est cochée, elle renvoie la valeur True, sinon elle renvoie la valeur False.
+
+st.button(): Boutons
+
+st.multiselect(): Multiselections
+
+st.select_slider(): Widget de sélection
+
+st.slider(): Widget de type "slider"
+
+
+IMPUTS
+
+st.number_input(): Saisie numérique
+
+st.text_input(): Saisie textuelle
+
+st.date_input(): Saisie de date
+
+st.time_input(): Saisie horaire
+
+st.text_area(): Saisie de texte avec moyen d'écrire
+
+st.file_uploader(): Téléchargement de fichiers
+
+st.color_picker(): Sélection de couleur
+
+
