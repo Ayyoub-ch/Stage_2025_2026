@@ -1,44 +1,66 @@
-/* Reset léger */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* ===========================
+   PALETTE
+=========================== */
+:root {
+    --c1: #F6F4FB;
+    --c2: #E3DAF5;
+    --c3: #2E2B7C;
+    --c4: #5702D7;
+    --c5: #9748FD;
+    --c6: #E255CE;
+    --c7: #FF9267;
 }
 
-/* Typo & fond global */
+/* ===========================
+   FOND STYLE LOGICAL
+=========================== */
 body, .stApp {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top left, #2E2B7C 0, #050516 55%, #02010b 100%);
-    color: #f5f5f7;
+    background: radial-gradient(circle at top left,
+        var(--c3) 0%,
+        #1a174a 40%,
+        #0a0820 80%
+    ) !important;
+    color: var(--c1);
+    font-family: "Inter", sans-serif;
 }
 
-/* Hero */
+/* Glow subtil façon Logical */
+.stApp::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(151,72,253,0.25) 0%, transparent 60%),
+        radial-gradient(circle at 80% 70%, rgba(226,85,206,0.18) 0%, transparent 70%),
+        radial-gradient(circle at 50% 50%, rgba(255,146,103,0.12) 0%, transparent 80%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ===========================
+   HERO
+=========================== */
 .hero {
-    padding: 80px 0 40px;
-    display: flex;
-    justify-content: center;
+    padding: 90px 0 40px;
     text-align: center;
-}
-
-.hero-content {
-    max-width: 800px;
-    padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 2.8rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    color: var(--c1);
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     opacity: 0.85;
     margin-bottom: 30px;
 }
 
-/* Boutons */
+/* ===========================
+   BOUTONS
+=========================== */
 .hero-actions {
     display: flex;
     justify-content: center;
@@ -47,66 +69,97 @@ body, .stApp {
 }
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 22px;
+    padding: 12px 26px;
     border-radius: 999px;
     font-weight: 600;
-    font-size: 0.95rem;
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    transition: 0.2s ease;
 }
 
 .btn.primary {
-    background: linear-gradient(135deg, #5702D7, #9748FD);
-    color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    background: linear-gradient(135deg, var(--c4), var(--c5));
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
 }
 
 .btn.primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 32px rgba(0,0,0,0.55);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.6);
 }
 
 .btn.secondary {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.35);
-    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--c1);
 }
 
 .btn.secondary:hover {
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.08);
 }
 
-/* Titre de section */
+/* ===========================
+   TITRES DE SECTION
+=========================== */
 .section-title {
-    margin: 10px 0 25px;
-    font-size: 1.6rem;
+    margin: 20px 0 25px;
+    font-size: 1.7rem;
     font-weight: 600;
+    color: var(--c1);
 }
 
-/* Cartes */
+/* ===========================
+   CARTES STYLE LOGICAL
+=========================== */
 .card {
-    background: radial-gradient(circle at top left, rgba(151,72,253,0.25), rgba(10,10,25,0.95));
+    background: linear-gradient(
+        145deg,
+        rgba(151,72,253,0.18),
+        rgba(46,43,124,0.65)
+    );
     border-radius: 18px;
-    padding: 20px 18px;
-    margin: 10px 0 20px;
+    padding: 22px 20px;
+    margin: 12px 0 20px;
     box-shadow: 0 10px 28px rgba(0,0,0,0.55);
     border: 1px solid rgba(255,255,255,0.06);
     min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.65);
 }
 
 .card h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 600;
+    color: var(--c1);
 }
 
 .card p {
     font-size: 0.95rem;
     opacity: 0.85;
+}
+
+/* ===========================
+   TEXTAREA
+=========================== */
+.styled-textarea {
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid var(--c5);
+    background-color: rgba(255,255,255,0.08);
+    color: var(--c1);
+    font-size: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.styled-textarea:focus {
+    border-color: var(--c4);
+    background-color: rgba(255,255,255,0.15);
+    box-shadow: 0 0 14px rgba(151,72,253,0.4);
 }
