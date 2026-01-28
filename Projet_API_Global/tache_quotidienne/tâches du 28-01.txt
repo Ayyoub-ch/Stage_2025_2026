@@ -1,0 +1,11 @@
+tâches du 28-01
+
+PAS d'API AlloCine (ce sont de sacrés radins quand même)
+
+
+Rectification des APIS et des versions d'application au niveau de l'inflation et des matières premières
+Recherche (en vain) d'APIS de Cinéma (gratuite et correcte)
+
+Fusion des Versions de l'Application pour avoir l'inflation et les matières premières
+
+Essaie de mettre les cinémas mais le job casse les pieds

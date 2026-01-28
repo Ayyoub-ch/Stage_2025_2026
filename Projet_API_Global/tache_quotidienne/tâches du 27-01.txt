@@ -1,0 +1,17 @@
+But d'aujourd'hui:
+
+-Essayer de comprendre encore mieux le code streamlit et d'essayer de faire une page 
+-Faire le CSS
+
+
+En cours:
+- Créer la partie de l'inflation
+
+
+
+Réussi:
+- Faire le CSS de l'appli (validé par JP et Salah )
+- Créer la 1ere partie (Commodity)
+
+
+
