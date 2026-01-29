@@ -1,0 +1,7 @@
+But d'aujourd'hui:
+
+
+Tâches:
+-Job cinema ✅
+-API cinema
+-Implémenter dans l'application les données cinéma
