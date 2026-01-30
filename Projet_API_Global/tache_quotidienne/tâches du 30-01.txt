@@ -1,0 +1,18 @@
+But d'aujourd'hui:
+
+-Corriger les erreurs sur les APIS
+
+Partie DATE ✅
+
+Partie PERIOD ✅
+
+Partie NOW ✅
+
+
+
+Partie Streamlit 
+
+Partie DATE ✅
+
+
+
