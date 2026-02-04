@@ -1,0 +1,82 @@
+But d'aujourd'hui
+
+-Faire les endpoints de l'API Covid :
+
+- By Date
+- By Period
+
+
+-Mettre l'API à disposition de Streamlit
+
+
+
+Dans le cas où je termine :
+- Fusionner les données cinema et covid dans l'application Streamlit pour voir le rendu
+
+Difficultés:
+Chercher la date demandée dans le fichier en question : prendre l'année et chercher dedans (le parser)
+prendre les informations présentes dans le fichier en s'arretant aux bornes
+si l'année de fin est différente de celle de de début alors on prend tout ce qui est entre les deux dates soient par exemple
+entre 2020-01-15 et 2022-01-12 il y a toute l'année 2021
+
+
+if category not in METEO_CATEGORIES:
+        raise HTTPException(400, "Invalid category")
+
+    start = datetime.strptime(start_date, "%Y-%m-%d")
+    end = datetime.strptime(end_date, "%Y-%m-%d")
+
+    years = get_years_in_range(start, end)
+
+    all_data = []
+    for year in years:
+        blobs = get_blobs_for_year(year)
+        data = await download_blobs_parallel(blobs)
+        all_data.extend(data)
+
+    fields = COMMON_FIELDS + METEO_CATEGORIES[category]
+    start_str = date_debut.replace("-", "")
+    end_str = date_fin.replace("-", "")
+
+
+
+🔴 LE PROBLÈME RÉEL (important)
+
+👉 Tu n’as PAS des fichiers journaliers.
+👉 Tu as des fichiers annuels :
+
+Donnees_France/2020/covid_2020.json
+Donnees_France/2021/covid_2021.json
+
+
+Et dans ton code tu fais :
+
+prefix = f"{FOLDER_COVID}/{current.year}/covid_{current.year}.json"
+
+
+➡️ Quel que soit le jour, tu télécharges LE MÊME FICHIER DE L’ANNÉE.
+
+Donc cette boucle :
+
+current = start
+while current <= end:
+    ...
+    blobs = list(bucket_covid.list_blobs(prefix=prefix))
+    all_blobs.extend(blobs)
+    current += timedelta(days=1)
+
+
+❌ ne filtre RIEN
+❌ ajoute le même blob 365 fois
+❌ et download_blobs_parallel lit le JSON annuel complet
+
+👉 Résultat logique : toute l’année.
+
+🧠 RÈGLE D’OR À RETENIR
+
+🔹 On ne peut PAS filtrer par date avec GCS si la date n’est PAS dans le nom du fichier.
+🔹 Le filtrage DOIT se faire APRÈS le téléchargement du JSON.
+
+✅ LA BONNE STRATÉGIE (dans ton cas)
+✔️ Étape 1 — Télécharger UNE FOIS le fichier annuel
+✔️ Étape 2 — Filtrer les entrées JSON par date

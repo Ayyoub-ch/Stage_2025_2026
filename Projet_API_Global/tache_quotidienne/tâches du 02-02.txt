@@ -1,0 +1,32 @@
+But d'aujourd'hui:
+
+- Corriger les erreurs Streamlit sur le Cinéma: 
+
+Partie période : problème au niveau de dates✅
+
+ File "/app/main.py", line 572, in <module>
+    if start_date > end_date:
+TypeError: '>' not supported between instances of 'str' and 'datetime.date'
+
+C'ETAIT A CAUSE D'UN SEUL MOT !!!
+
+partie Now: problème tout court
+
+Corriger l'Endpoint complet
+
++
+
+vérifier l'écriture de cinema (et non cinémas) [C'ETAIT UN S L'ERREUR ! ]✅
+
+Rechercher les données sur le covid✅
+
+
+API Covid:
+Endpoint possible: 
+- By Date
+- By Period
+
+
+
+
+- Regarder les possibilités d'API sur la SNCF et BLABLACAR

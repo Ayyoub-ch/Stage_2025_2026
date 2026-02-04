@@ -1,0 +1,8 @@
+But d'aujourd'hui
+
+Essayer de réussir à récupérer les données d'une période de deux dates (et non une année complète ou une liste vide)
+
+Réussi:
+-Créer les endpoints de l'API Covid
+-Les mettre sur Streamlit
+-Importer les données cinema et covid sur la test afin de voir comment ça réagit (tout va bien )
