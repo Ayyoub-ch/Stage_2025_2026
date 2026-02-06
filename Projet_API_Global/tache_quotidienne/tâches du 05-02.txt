@@ -1,0 +1,6 @@
+Essaie foireux de mettre la colonne SEANCES en deux Colonne distinctes:
+
+DEBUT_SEANCE et FIN_SEANCE
+
+
+J'y arrive pas 
