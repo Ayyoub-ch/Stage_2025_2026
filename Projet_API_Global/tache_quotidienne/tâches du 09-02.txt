@@ -1,0 +1,15 @@
+But d'aujourd'hui:
+
+- Mettre une intervalle de date afin de respecter les limites des dates pour chaque donnée ✅
+
+Implémentation du Sport dans l'Open Data
+-Création du job Sport✅
+-Refactorisation du Code issu des scripts✅
+-Création des APIS 
+	- Rugby National ✅
+	- Rugby National Now ?
+	- Rugby Regional ✅
+	- Foot  ?
+GET
+/rugby_regional/{annee_saison}/{compet}/download
+

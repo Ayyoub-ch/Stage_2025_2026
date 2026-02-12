@@ -1,0 +1,7 @@
+But d'aujourd'hui :
+
+changer les dates par des années en remplaçant les date_input par des select box ✅ 10:00
+
+
+Essayer de rassembler tout pour le covid, l'inflation, le transport et la meteo
+ramener le cinéma et modifier Sports en Evenement

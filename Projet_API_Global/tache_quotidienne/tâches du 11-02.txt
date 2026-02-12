@@ -1,0 +1,195 @@
+tâches du 11-02
+
+
+Avancement sur l'API Sport :
+
+Faire Rugby Regional by Period ✅
+
+Corriger Rugby National Now✅
+
+Essayer de rassembler en un seul point✅
+
+POUR DEMAIN: changer les dates par des années 
+
+A GARDER :
+
+elif router_choice == "Football Now":
+    st.header("Matchs de Football en temps réel")
+    
+    st.markdown("Récupère les dernières données des matchs de football disponibles.")
+    
+    if st.button("Récupérer les données", key="football_now_btn"):
+        with st.spinner("Chargement des données..."):
+            endpoint = f"/football/latest/download"
+            success, data, error = fetch_data(API_SPORT,endpoint)
+
+            if success:
+                st.session_state.api_data = data
+                st.session_state.api_filename = f"football_matchs_now.json"
+            else:
+                st.error(error)
+
+    # Affichage HORS du bloc if button
+    if st.session_state.api_data is not None:
+        display_data(
+            st.session_state.api_data,
+            st.session_state.api_filename
+        )  
+
+
+
+elif router_choice == "Rugby National Now":
+    st.header("Matchs de Rugby National en temps réel")
+    
+    st.markdown("Récupère les dernières données des matchs de rugby national disponibles.")
+    
+    if st.button("Récupérer les données", key="football_now_btn"):
+        with st.spinner("Chargement des données..."):
+            endpoint = f"/rugby_national/now-download"
+            success, data, error = fetch_data(API_SPORT,endpoint)
+
+            if success:
+                st.session_state.api_data = data
+                st.session_state.api_filename = f"rugby_national_matchs_now.json"
+            else:
+                st.error(error)
+
+    # Affichage HORS du bloc if button
+    if st.session_state.api_data is not None:
+        display_data(
+            st.session_state.api_data,
+            st.session_state.api_filename
+        )  
+
+
+elif router_choice == "Rugby National by Date":
+    st.header("Matchs de Rugby National pour une année spécifique")
+    
+    st.markdown("Récupère les dernières données des matchs de rugby national pour une année définie.")
+    min_date = datetime.date(2008, 1, 1) 
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        selected_date = st.date_input("Date :",min_value=min_date, max_value=None )
+    formatted_selected_date = selected_date.strftime("%Y-%m-%d")
+    
+    # Formatage de la date en YYYY
+    annee_saison = selected_date.strftime("%Y")
+    st.caption(f"Date formatée : {annee_saison}")
+    if st.button("Récupérer les données", key="rugby_nationale_date_btn"):
+        with st.spinner("Chargement des données..."):
+            endpoint = f"/rugby_national/{annee_saison}/download"
+            success, data, error = fetch_data(API_SPORT,endpoint)
+
+            if success:
+                st.session_state.api_data = data
+                st.session_state.api_filename = f"rugby_national_matchs_{annee_saison}.json"
+            else:
+                st.error(error)
+
+    # Affichage HORS du bloc if button
+    if st.session_state.api_data is not None:
+        display_data(
+            st.session_state.api_data,
+            st.session_state.api_filename
+        )  
+
+elif router_choice == "Rugby Regional by Date":
+    st.header("Matchs de Rugby Regional pour une année de saison spécifique")
+    
+    st.markdown("Récupère les dernières données des matchs de rugby régional pour une année de saison définie.")
+    min_date = datetime.date(2022, 1, 1) 
+    max_date = datetime.date(2024, 12, 31)
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        selected_date = st.date_input("Date :",min_value=min_date, max_value=max_date )
+    formatted_selected_date = selected_date.strftime("%Y-%m-%d")
+    
+    with col2:
+        compet = st.selectbox("Compétition :", competitions)
+
+    # Formatage de la date en YYYY
+    annee_saison = selected_date.strftime("%Y")
+    st.caption(f"Date formatée : {annee_saison}")
+    
+    if st.button("Récupérer les données", key="rugby_regionale_date_btn"):
+        with st.spinner("Chargement des données..."):
+            endpoint = f"/rugby_regional/{annee_saison}/{compet}/download"
+            success, data, error = fetch_data(API_SPORT,endpoint)
+
+            if success:
+                st.session_state.api_data = data
+                st.session_state.api_filename = f"rugby_regional_matchs_{annee_saison}_{compet}.json"
+            else:
+                st.error(error)
+
+    # Affichage HORS du bloc if button
+    if st.session_state.api_data is not None:
+        display_data(
+            st.session_state.api_data,
+            st.session_state.api_filename
+        )  
+
+elif router_choice == "Rugby Regional by Period":
+    st.header("Matchs de Rugby Regional pour une période spécifique")
+    
+    st.markdown("Récupère les dernières données des matchs de rugby régional pour une période définie.")
+    min_date = datetime.date(2022, 1, 1) 
+    max_date = datetime.date(2024, 12, 31)
+    
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        compet = st.selectbox("Compétition :", competitions)
+    
+    with col2:
+        start_date = st.date_input("Date de début :",min_value=min_date, max_value=max_date)
+    
+    with col3:
+        end_date = st.date_input("Date de fin :",min_value=min_date, max_value=max_date)
+
+    # Validation des dates
+    if start_date > end_date:
+        st.error("La date de début doit être antérieure à la date de fin.")
+    else:
+        # Formatage des dates en YYYY
+        formatted_start = start_date.strftime("%Y")
+        formatted_end = end_date.strftime("%Y")
+        st.caption(f"Période : {formatted_start} - {formatted_end}")
+        
+        if st.button("Récupérer les données", key="rugby_regionale_period_btn"):
+            with st.spinner("Chargement des données (cela peut prendre du temps pour de longues périodes)..."):
+                endpoint = f"/rugby_regional/period-download"
+                params = {
+                    "start_year": formatted_start,
+                    "end_year": formatted_end,
+                    "compet": compet
+                }
+                success, data, error = fetch_data(API_SPORT,endpoint, params, timeout = 600)
+                
+                if success:
+                    # On stocke dans session_state
+                    st.session_state.api_data = data
+                    st.session_state.api_filename = f"{compet}_rugby_regional_{formatted_start}_to_{formatted_end}.json"
+                else:
+                    st.error(error)
+
+        # Affichage HORS du bloc if button
+        if st.session_state.api_data is not None:
+            display_data(
+                st.session_state.api_data,
+                st.session_state.api_filename
+            )            
+
+
+# elif moment == "Par Période":
+            #     with col2:
+            #         competition = st.selectbox("Competition :",competitions)
+            #     col3, col4 = st.columns(2)    
+            #     with col3:
+            #         start_date = st.date_input("Date de début :",min_value=min_date, max_value=max_date)
+            #     with col4:
+            #         end_date = st.date_input("Date de fin :",min_value=min_date, max_value=max_date)

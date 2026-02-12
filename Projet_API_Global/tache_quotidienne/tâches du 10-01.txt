@@ -1,0 +1,15 @@
+tâches du 10-01
+
+Avancement sur l'API Sport :
+-ajout des endpoints dans l'api et dans streamlit✅
+
+
+Résultats du point avec Jp et Matthieu:
+
+Faire Rugby Regional by Period
+
+
+
+Corriger Rugby National Now
+Essayer de rassembler en un seul point
+
