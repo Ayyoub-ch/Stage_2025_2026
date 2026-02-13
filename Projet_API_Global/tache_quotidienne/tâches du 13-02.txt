@@ -1,4 +1,13 @@
 tâches du 13-02
 
 Prise de Captures d'écran pour le rapport ✅
+
 Recherche sur l'API openagenda ✅
+
+Notes d'observation sur l'API openagenda:
+-On doit mettre la clé en header et cette dernière est publique donc modifiable à tout moment 
+- La requête de base est : https://api.openagenda.com/v2/agendas
+-On peut obtenir les agendas et les évènements liés avec : https://api.openagenda.com/v2/agendas/4443516/events
+-On peut faire ajouter une recherche via ?search : https://api.openagenda.com/v2/agendas?search=Lille | https://api.openagenda.com/v2/agendas?search=Paris
+-On peut avoir plusieurs filtres comme l'official (niveau critère) ou encore la localisation ou la mise à jour updatedAt.gte
+Exemple: ?updatedAt.gte=2025-07-16T12:19:00.000Z
