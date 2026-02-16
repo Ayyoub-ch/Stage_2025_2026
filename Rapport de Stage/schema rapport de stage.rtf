@@ -1,0 +1,41 @@
+{\rtf1}
+
+Etapes d'explication pour le projet Open Data
+
+* = capture d'écran
+7 = capture d'écran déjà faite
+Contexte
+
+Recherche des APIS (explciation des moyens de recherche de documentation)
+
+Test via Postman pour vérifier la cohérence et la pertinence (explciation de Postman et des méthodes utilisées) *
+
+Création du Script Python en local (explciation de code et la structure adoptée) *
+
+Mise sur Github + Création de la branche *
+
+GCP -> Cloud RUN + Mise du Github sur Cloud Run *
+
+Création du dossier correspondant aux données dans le dossier jobs *
+
+Création du Bucket sur GCP  *
+
+Adaptation du code pour la mise dans le bucket *
+
+Création du Job via Artifact Registry (explciation de Artifact Registry pourc réer un service ou un job) *
+
+Se placer dans le dossier du jobs voulu et taper la commande : gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT_ID/REPO_NAME/IMAGE_NAME:v1
+*
+Déployer le job et vérifier le bucket *
+
+Création du service via Artifact Registry *
+
+Création des routes en fonction des besoins (period, date, now, type) via le dossier routers * 7
+
+Création des fonction dans le dossier services dans le fichier gcs.py * 7
+
+Importation des fonctions dans le main.py * 7
+
+Déploiement et vérification du swagger * 7
+
+Début de la mise sur Streamlit (explciation de Streamlit) * 7
