@@ -1,0 +1,27 @@
+open-data/
+├── 📁 draft/
+├── 📁 gtfs_static/
+├── 📁 jobs/
+│   ├── 📁 cinema/
+│   ├── 📁 commodity/
+│   ├── 📁 covid/
+│   ├── 📁 inflation/
+│   ├── 📁 sports/
+│   ├── 📁 traffic/
+│   └── 📁 transport/
+├── 📁 meteo/
+├── 📁 routers/
+├── 📁 scripts/
+├── 📁 services/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 gcs.py
+│   └── 🐍 logger.py
+├── 📁 streamlit/
+│   ├── 🐳 Dockerfile
+│   ├── 🐍 main.py
+│   ├── 📄 requirements.txt
+│   └── 🎨 style.css
+├── 🐳 Dockerfile
+├── 🐍 main.py
+├── 📝 README.md
+└── 📄 requirements.txt
